@@ -7,10 +7,10 @@ router.post("/", categories.create);
 // Retrieve all Note
 router.get("/", categories.findAll);
 // Retrieve a single Note with noteId
-router.get("/:Id", categories.findOne);
+router.get("/:id", categories.findOne);
 // Update a Note with Id
-router.put("/:Id", categories.update);
+router.put("/:id", categories.update);
 // Delete a Note with Id
-router.delete("/:Id", categories.delete);
+router.delete("/:id", categories.delete);
 
 module.exports = router;

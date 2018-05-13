@@ -7,10 +7,10 @@ router.post("/", nsx.create);
 // Retrieve all Note
 router.get("/", nsx.findAll);
 // Retrieve a single Note with noteId
-router.get("/:Id", nsx.findOne);
+router.get("/:id", nsx.findOne);
 // Update a Note with Id
-router.put("/:Id", nsx.update);
+router.put("/:id", nsx.update);
 // Delete a Note with Id
-router.delete("/:Id", nsx.delete);
+router.delete("/:id", nsx.delete);
 
 module.exports = router;

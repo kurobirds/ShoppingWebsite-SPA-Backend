@@ -29,77 +29,74 @@ exports.findAll = function(req, res) {
 };
 
 exports.findOne = function(req, res) {
-	categories.findById(req.params.Id, (err, docs) => {
-		if (err) {
-			console.log(err);
-			if (err.kind === "ObjectId") {
-				res.status(404).send({
-					message: "Not found with id!",
+	categories
+		.findById(req.params.id)
+		.then(doc => {
+			if (!doc) {
+				return res.status(404).send({
+					message: `Not found with id ${req.params.id}`,
 				});
 			}
-			res.status(500).send({ message: "Error when finding!" });
-		}
-
-		if (!docs) {
-			return res.status(404).send({
-				message: "Not found with id!",
-			});
-		}
-
-		res.send(docs);
-	});
+			res.send(doc);
+		})
+		.catch(err => {
+			if (err.kind === "ObjectId") {
+				return res.status(404).send({
+					message: `Not found with id ${req.params.id}`,
+				});
+			}
+			return res.status(500).send({ message: "Error when finding!" });
+		});
 };
 
 exports.update = function(req, res) {
-	categories.findById(req.params.id, (err, docs) => {
-		if (err) {
-			console.log(err);
-			if (err.kind === "ObjectId") {
-				res.status(404).send({
-					message: "Not found with id" + req.params.id,
+	categories
+		.findByIdAndUpdate(
+			req.params.id,
+			{
+				catname: req.body.catname || "Null",
+			},
+			{ new: true }
+		)
+		.then(doc => {
+			if (!doc) {
+				return res.status(404).send({
+					message: `Not found with id ${req.params.id}`,
 				});
 			}
-			res.status(500).send({ message: "Error when finding!" });
-		}
-
-		if (!docs) {
-			return res.status(404).send({
-				message: "Not found with id" + req.params.id + req.params.id,
+			res.send(doc);
+		})
+		.catch(err => {
+			if (err.kind === "ObjectId") {
+				return res.status(404).send({
+					message: `Not found with id ${req.params.id}`,
+				});
+			}
+			return res.status(500).send({
+				message: "Error when finding!",
 			});
-		}
-
-		docs.catname = req.body.catname || "Null";
-
-		docs.save((err, docs) => {
-			err
-				? res.status(500).send({
-					message: "Could not update with id" + req.params.id,
-				  })
-				: res.send(docs);
 		});
-	});
 };
 
 exports.delete = function(req, res) {
-	categories.findByIdAndRemove(req.params.id, (err, docs) => {
-		if (err) {
-			console.log(err);
-			if (err.kind === "ObjectId") {
-				res
-					.status(404)
-					.send({ message: "Not found with id" + req.params.id });
+	categories
+		.findByIdAndRemove(req.params.id)
+		.then(doc => {
+			if (!doc) {
+				return res.status(404).send({
+					message: `Not found with id ${req.params.id}`,
+				});
 			}
-			res
-				.status(500)
-				.send({ message: "Error when delete with id" + req.params.id });
-		}
-
-		if (!docs) {
-			return res
-				.status(404)
-				.send({ message: "Not found with id" + req.params.id });
-		}
-
-		res.send({ message: "Deleted successfully!" });
-	});
+			res.send({ message: "Deleted successfully!" });
+		})
+		.catch(err => {
+			if (err.kind === "ObjectId") {
+				return res.status(404).send({
+					message: `Not found with id ${req.params.id}`,
+				});
+			}
+			return res.status(500).send({
+				message: `Error when delete with id ${req.params.id}`,
+			});
+		});
 };
