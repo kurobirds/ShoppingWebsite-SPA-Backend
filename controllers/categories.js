@@ -1,10 +1,10 @@
-var nsx = require("../models/nsx");
+var categories = require("../models/categories");
 
 exports.create = function(req, res) {
 	console.log(req.body);
 
-	var celebrities = new nsx({
-		namensx: req.body.namensx || "null",
+	var celebrities = new categories({
+		catname: req.body.catname || "null",
 	});
 
 	celebrities.save((err, docs) => {
@@ -18,7 +18,7 @@ exports.create = function(req, res) {
 };
 
 exports.findAll = function(req, res) {
-	nsx.find((err, docs) => {
+	categories.find((err, docs) => {
 		if (err) {
 			console.log(err);
 			res.status(500).send({ message: "Error when finding celebrities" });
@@ -29,7 +29,7 @@ exports.findAll = function(req, res) {
 };
 
 exports.findOne = function(req, res) {
-	nsx.findById(req.params.Id, (err, docs) => {
+	categories.findById(req.params.Id, (err, docs) => {
 		if (err) {
 			console.log(err);
 			if (err.kind === "ObjectId") {
@@ -51,7 +51,7 @@ exports.findOne = function(req, res) {
 };
 
 exports.update = function(req, res) {
-	nsx.findById(req.params.id, (err, docs) => {
+	categories.findById(req.params.id, (err, docs) => {
 		if (err) {
 			console.log(err);
 			if (err.kind === "ObjectId") {
@@ -68,7 +68,7 @@ exports.update = function(req, res) {
 			});
 		}
 
-		docs.namensx = req.body.namensx || "Null";
+		docs.catname = req.body.catname || "Null";
 
 		docs.save((err, docs) => {
 			err
@@ -81,7 +81,7 @@ exports.update = function(req, res) {
 };
 
 exports.delete = function(req, res) {
-	nsx.findByIdAndRemove(req.params.id, (err, docs) => {
+	categories.findByIdAndRemove(req.params.id, (err, docs) => {
 		if (err) {
 			console.log(err);
 			if (err.kind === "ObjectId") {
