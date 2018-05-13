@@ -1,21 +1,18 @@
-var products = require("../models/products");
+var users = require("../models/users");
 
 exports.create = function(req, res) {
 	console.log(req.body);
 
-	var products = new products({
-		proname: req.body.proname || "null",
-		tinyDes: req.body.tinyDes || "null",
-		fullDes: req.body.fullDes || "null",
-		Prize: req.body.Prize || 0,
-		catID: req.body.catID || 0,
-		idNSX: req.body.idNSX || 0,
-		Quantity: req.body.Quantity || 0,
-		SLBan: req.body.SLBan || 0,
-		View: req.body.View || 0,
+	var users = new users({
+		f_username: req.body.f_username || "null",
+		f_password: req.body.f_password || "null",
+		f_name: req.body.f_name || "null",
+		f_email: req.body.f_email || "null",
+		f_DOB: req.body.f_DOB || "01/01/1900",
+		f_permission: req.body.f_permission || -1,
 	});
 
-	products.save((err, docs) => {
+	users.save((err, docs) => {
 		if (err) {
 			console.log(err);
 			res.status(500).send({ message: "Error when creating!" });
@@ -26,10 +23,10 @@ exports.create = function(req, res) {
 };
 
 exports.findAll = function(req, res) {
-	products.find((err, docs) => {
+	users.find((err, docs) => {
 		if (err) {
 			console.log(err);
-			res.status(500).send({ message: "Error when finding" });
+			res.status(500).send({ message: "Error when finding!" });
 		} else {
 			res.send(docs);
 		}
@@ -37,7 +34,7 @@ exports.findAll = function(req, res) {
 };
 
 exports.findOne = function(req, res) {
-	products
+	users
 		.findById(req.params.id)
 		.then(doc => {
 			if (!doc) {
@@ -58,19 +55,16 @@ exports.findOne = function(req, res) {
 };
 
 exports.update = function(req, res) {
-	products
+	users
 		.findByIdAndUpdate(
 			req.params.id,
 			{
-				proname: req.body.proname || "null",
-				tinyDes: req.body.tinyDes || "null",
-				fullDes: req.body.fullDes || "null",
-				Prize: req.body.Prize || 0,
-				catID: req.body.catID || 0,
-				idNSX: req.body.idNSX || 0,
-				Quantity: req.body.Quantity || 0,
-				SLBan: req.body.SLBan || 0,
-				View: req.body.View || 0,
+				f_username: req.body.f_username || "null",
+				f_password: req.body.f_password || "null",
+				f_name: req.body.f_name || "null",
+				f_email: req.body.f_email || "null",
+				f_DOB: req.body.f_DOB || "01/01/1900",
+				f_permission: req.body.f_permission || -1,
 			},
 			{ new: true }
 		)
@@ -95,7 +89,7 @@ exports.update = function(req, res) {
 };
 
 exports.delete = function(req, res) {
-	products
+	users
 		.findByIdAndRemove(req.params.id)
 		.then(doc => {
 			if (!doc) {

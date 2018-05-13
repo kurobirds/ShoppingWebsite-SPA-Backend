@@ -3,11 +3,11 @@ var nsx = require("../models/nsx");
 exports.create = function(req, res) {
 	console.log(req.body);
 
-	var celebrities = new nsx({
+	var nsx = new nsx({
 		namensx: req.body.namensx || "null",
 	});
 
-	celebrities.save((err, docs) => {
+	nsx.save((err, docs) => {
 		if (err) {
 			console.log(err);
 			res.status(500).send({ message: "Error when creating!" });
@@ -21,7 +21,7 @@ exports.findAll = function(req, res) {
 	nsx.find((err, docs) => {
 		if (err) {
 			console.log(err);
-			res.status(500).send({ message: "Error when finding celebrities" });
+			res.status(500).send({ message: "Error when finding" });
 		} else {
 			res.send(docs);
 		}

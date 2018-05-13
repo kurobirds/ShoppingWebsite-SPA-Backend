@@ -1,9 +1,16 @@
-var express = require('express');
+var express = require("express");
 var router = express.Router();
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+var users = require("../controllers/users");
+
+router.post("/", users.create);
+// Retrieve all Note
+router.get("/", users.findAll);
+// Retrieve a single Note with noteId
+router.get("/:id", users.findOne);
+// Update a Note with Id
+router.put("/:id", users.update);
+// Delete a Note with Id
+router.delete("/:id", users.delete);
 
 module.exports = router;
