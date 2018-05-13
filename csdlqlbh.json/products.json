@@ -1,0 +1,742 @@
+{ 
+    "_id" : ObjectId("5af7e933a8cc4309f0b30435"), 
+    "ProName" : "Nikon D850", 
+    "TinyDes" : "Bảo hành 12 tháng chính hãng", 
+    "FullDes" : "<p>- Bộ cảm biến CMOS FX-Format BMP 45.7MP<br />- Bộ xử l&yacute; h&igrave;nh ảnh EXPEED 5<br />- M&agrave;n h&igrave;nh cảm ứng LCD 3.2 \"2.36m-Dot<br />- Ghi h&igrave;nh Video 4K UHD ở tốc độ 30 khung h&igrave;nh / gi&acirc;y<br />- Hệ thống AFF 153 điểm đa điểm CAM 20K<br />- ISO: 64-25600, mở rộng: 32-102400<br />- 7 khung h&igrave;nh / gi&acirc;y cho 51 khung h&igrave;nh với AE / AF<br />- Video khuynh đảo 8K, Chế độ Digitizer<br />- Bộ cảm biến RGB 180k Pixel<br />- SnapBridge Bluetooth v&agrave; Wi-Fi<br />- Video slideshow HD fullfone 120fps<br />- Khe SD sẽ hỗ trợ UHS-II<br />- Cải tiến m&agrave;n h&igrave;nh c&oacute; cả m&agrave;n h&igrave;nh LiveView<br />- Cải tiến chế độ chụp im lặng<br />- Cải thiện tuổi thọ pin</p>", 
+    "Price" : NumberInt(79000000), 
+    "CatID" : NumberInt(1), 
+    "IDNSX" : NumberInt(3), 
+    "Quantity" : NumberInt(10), 
+    "SLB" : NumberInt(8), 
+    "LX" : NumberInt(3478), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "6"
+}
+{ 
+    "_id" : ObjectId("5af7e933a8cc4309f0b30436"), 
+    "ProName" : "Nikon D5", 
+    "TinyDes" : "Bảo hành 12 tháng chính hãng", 
+    "FullDes" : "<p>- Cảm biến CMOS FX-Format 20.8MP<br />- Bộ xử l&yacute; Expeed 5<br />- M&agrave;n h&igrave;nh cảm ứng LCD 3.2\" 2.36m-Dot<br />- Quay video 4K UHD tại 30fps<br />- ISO 102.400 mở rộng 3.280.000<br />- Tốc độ chụp h&igrave;nh li&ecirc;n tiếp 12fps</p>", 
+    "Price" : NumberInt(121990000), 
+    "CatID" : NumberInt(1), 
+    "IDNSX" : NumberInt(3), 
+    "Quantity" : NumberInt(1), 
+    "SLB" : NumberInt(9), 
+    "LX" : NumberInt(1257), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "6"
+}
+{ 
+    "_id" : ObjectId("5af7e934a8cc4309f0b30437"), 
+    "ProName" : "Canon EOS 1D X Mark II", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>- Cảm biến Full Fram CMOS 20.2MP<br />- Bộ xử l&yacute; h&igrave;nh ảnh Dual DIGIC 6+<br />- M&agrave;n h&igrave;nh cảm ứng LCD 3.2\" 1.62m-Dot<br />- Quay video DCI 4K với 60fps, 8.8MP Still Grab<br />- 61-Point High Density Reticular AF II<br />- ISO ti&ecirc;u chuẩn 51.200, mở rộng ISO 409.600<br />- Tốc độ chụp 14fps, 16fps với chế độ Live View<br />- Dual Pixel CMOS AF and Movie Servo AF<br />- T&iacute;ch hợp GPS, CFast v&agrave; khe cắm CF Card</p>", 
+    "Price" : NumberInt(118500000), 
+    "CatID" : NumberInt(1), 
+    "IDNSX" : NumberInt(1), 
+    "Quantity" : NumberInt(8), 
+    "SLB" : NumberInt(5), 
+    "LX" : NumberInt(74), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "5"
+}
+{ 
+    "_id" : ObjectId("5af7e934a8cc4309f0b30438"), 
+    "ProName" : "Canon EOS 5D Mark IV", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>- Cảm biến CMOS Full-Frame 30.4MP<br />- Bộ xử l&yacute; h&igrave;nh ảnh DIGIC 6+<br />- M&agrave;n h&igrave;nh cảm ứng LCD 3.2\" 1.62,-Dot<br />- Quay video 4K tại 30fps, cắt ảnh tĩnh từ video 8.8MP<br />- Số điểm n&eacute;t AF: 61 điểm với điểm lấy n&eacute;t 41 cross-points<br />- ISO: 100-32.000, mở rộng 50-102.000<br />- Dual Pixel Raw, lựa chọn v&ugrave;ng lấy n&eacute;t AF chỉ với 1 n&uacute;t<br />- T&iacute;ch hợp kết nối Wifi, NFC v&agrave; GPS<br />- Tốc độ chụp li&ecirc;n tiếp 7fps, khe cắm thẻ CF, SD</p>", 
+    "Price" : NumberInt(73990000), 
+    "CatID" : NumberInt(1), 
+    "IDNSX" : NumberInt(1), 
+    "Quantity" : NumberInt(11), 
+    "SLB" : NumberInt(3), 
+    "LX" : NumberInt(218), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "6"
+}
+{ 
+    "_id" : ObjectId("5af7e934a8cc4309f0b30439"), 
+    "ProName" : "Sony Alpha a7S II", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>- Cảm biến Full-Frame với 12.2 MP<br />- Bộ xử l&yacute; h&igrave;nh ảnh BIONZ X<br />- Quay phim ở 4K v&agrave; ful HD 1080<br />- S-Log3 Gamma v&agrave; Hiển thị Hỗ trợ chức năng<br />- Độ nghi&ecirc;ng m&agrave;n h&igrave;nh ở 3,0 \"1.228.800-Dot<br />- Tốc độ chụp li&ecirc;n tục l&ecirc;n đến 5 fps v&agrave; ISO 409.600<br />- Lấy n&eacute;t nhanh với 169 điểm<br />- C&oacute; chức năng Wi-Fi v&agrave; NFC</p>", 
+    "Price" : NumberInt(60000000), 
+    "CatID" : NumberInt(1), 
+    "IDNSX" : NumberInt(4), 
+    "Quantity" : NumberInt(11), 
+    "SLB" : NumberInt(1), 
+    "LX" : NumberInt(9497), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "4"
+}
+{ 
+    "_id" : ObjectId("5af7e934a8cc4309f0b3043a"), 
+    "ProName" : "Fujifilm X-T2 Graphite Silver ", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>- Phi&ecirc;n bản mới: m&agrave;u bạc - Graphite Silver Edition<br />- Cảm biến CMOS III APS-C X-Trans 24.3MP<br />- Bộ cảm biến h&igrave;nh ảnh X Processor Pro<br />- K&iacute;nh ngắm OLED 0.77x 2.36m-Dot<br />- M&agrave;n h&igrave;nh LCD 3\" 1.04m-Dot 3-Way<br />- Quay phim UHD 4K v&agrave; F-Log Gamma<br />- Kết nối Wifi<br />- Hệ thống lấy n&eacute;t tự động 325 điểm<br />- ISO 51200<br />- Tốc độ chụp li&ecirc;n tiếp 8fps<br />- Thiết kế chống chịu thời tiết<br />- Hai khe cắm UHS-II SD</p>", 
+    "Price" : NumberInt(39990000), 
+    "CatID" : NumberInt(1), 
+    "IDNSX" : NumberInt(2), 
+    "Quantity" : NumberInt(12), 
+    "SLB" : NumberInt(3), 
+    "LX" : NumberInt(9493), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "2"
+}
+{ 
+    "_id" : ObjectId("5af7e934a8cc4309f0b3043b"), 
+    "ProName" : "Sony Alpha A7 Mark II", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>- Cảm biến CMOS Exmor 24.3MP Full Khung h&igrave;nh<br />- Bộ xử l&yacute; h&igrave;nh ảnh BIONZ X<br />- Khả năng tương th&iacute;ch trực tiếp với Ống k&iacute;nh E-mount<br />- LCD 3.0 \"tiltable TFT với 1,228 triệu điểm ảnh<br />- K&iacute;nh ngắm điện tử OLED 2.4m-Dot<br />- Quay phim: XAVC S 50 Mbps, AVCHD 2.0 28 Mbps, 1.920 x 1.080 pixel<br />- Chụp li&ecirc;n tiếp: 2,5 h&igrave;nh/gi&acirc;y đến 5 h&igrave;nh/gi&acirc;y<br />- T&iacute;ch hợp Wi-Fi v&agrave; c&ocirc;ng nghệ NFC<br />- Đa giao diện v&agrave; Flash gắn trong<br />- Giao diện truy cập trực tiếp</p>", 
+    "Price" : NumberInt(31990000), 
+    "CatID" : NumberInt(1), 
+    "IDNSX" : NumberInt(4), 
+    "Quantity" : NumberInt(13), 
+    "SLB" : NumberInt(11), 
+    "LX" : NumberInt(16), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "5"
+}
+{ 
+    "_id" : ObjectId("5af7e934a8cc4309f0b3043c"), 
+    "ProName" : "Fujifilm X100FPlus", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>- Cảm biến 24.3MP APS-C X-Trans CMOS III<br />- Xử l&yacute; h&igrave;nh ảnh: X-Processor Pro<br />- Fujinon 23mm f/2 Lens<br />- K&iacute;nh ngắm lai quang học v&agrave; điện tử<br />- M&agrave;n h&igrave;nh LCD 3.0\" 1.04m-Dot<br />- Quya video Full HD 1080p / 60 fps<br />- 49 điểm lấy n&eacute;t theo pha trong 91-Point AF<br />- Độ nhạy s&aacute;ng mở rộng: ISO 51200<br />- Chụp ảnh li&ecirc;n tục to 8 fps<br />- T&iacute;ch hợp ISO Dial v&agrave; đ&ograve;n bẫy lấy n&eacute;t ph&iacute;a sau</p>", 
+    "Price" : NumberInt(31990000), 
+    "CatID" : NumberInt(1), 
+    "IDNSX" : NumberInt(2), 
+    "Quantity" : NumberInt(11), 
+    "SLB" : NumberInt(5), 
+    "LX" : NumberInt(80), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "3"
+}
+{ 
+    "_id" : ObjectId("5af7e935a8cc4309f0b3043d"), 
+    "ProName" : "Nikon D5300", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>- Cảm biến CMOS DX-Format 24.2MP<br />- Bộ xử l&yacute; h&igrave;nh ảnh EXPEED 4<br />- M&agrave;n h&igrave;nh LCD Vari-Angle 3.2\" 1037k<br />- Quay phim Full HD tại 60fps<br />- Cảm biến lấy n&eacute;t AF 39 điểm Multi Cam 4800DX<br />- ISO 12800, mở rộng ISO 25600<br />- Tốc độ chụp li&ecirc;n tục 5fps<br />- T&iacute;ch hợp WIFI v&agrave; kết nối GPS</p>", 
+    "Price" : NumberInt(11990000), 
+    "CatID" : NumberInt(1), 
+    "IDNSX" : NumberInt(3), 
+    "Quantity" : NumberInt(22), 
+    "SLB" : NumberInt(9), 
+    "LX" : NumberInt(24), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "5"
+}
+{ 
+    "_id" : ObjectId("5af7e935a8cc4309f0b3043e"), 
+    "ProName" : "Sony DSC WX100", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>M&agrave;n h&igrave;nh 2.7inch<br />Độ ph&acirc;n giải 18.2MP<br />Zoom quang 10x<br />Cảm biến 18.2MP<br />Tự động lấy n&eacute;t nhanh với High-speed Auto Focus<br />Zoom h&igrave;nh ảnh r&otilde; n&eacute;t 20x<br />9 chế độ hiệu ứng h&igrave;nh ảnh<br />Quay phim Full HD với ổn định h&igrave;nh ảnh quang học<br />Loại Cảm biến Exmor R CMOS<br />K&iacute;ch cỡ 1/2.3 (7.76mm)<br />Điểm ảnh tổng 18.9 Mega Pixels<br />Điểm ảnh thật 18.2 Mega Pixels</p>", 
+    "Price" : NumberInt(1495000), 
+    "CatID" : NumberInt(2), 
+    "IDNSX" : NumberInt(4), 
+    "Quantity" : NumberInt(25), 
+    "SLB" : NumberInt(4), 
+    "LX" : NumberInt(489), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "5"
+}
+{ 
+    "_id" : ObjectId("5af7e935a8cc4309f0b3043f"), 
+    "ProName" : "Canon IXUS 185", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>- Ống k&iacute;nh 20 megapixel<br />- Zoom quang học 8x (28 224) / ZoomPlus 16x<br />- Bộ xử l&yacute; h&igrave;nh ảnh h&igrave;nh ảnh DIGIC 4+<br />- Ổn định h&igrave;nh ảnh kỹ thuật số IS<br />- ISO 100 &ndash; ISO800<br />- Quay video 1280 x 720</p>", 
+    "Price" : NumberInt(2350000), 
+    "CatID" : NumberInt(2), 
+    "IDNSX" : NumberInt(1), 
+    "Quantity" : NumberInt(6), 
+    "SLB" : NumberInt(6), 
+    "LX" : NumberInt(15), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "4"
+}
+{ 
+    "_id" : ObjectId("5af7e935a8cc4309f0b30440"), 
+    "ProName" : "Fujifilm instax mini 9", 
+    "TinyDes" : "Bảo hành 12 tháng chính hãng", 
+    "FullDes" : "<p>- In ảnh tức th&igrave;<br />- K&iacute;nh ngắm quang học với Target Spot<br />- T&iacute;ch hợp gương tự sướng tr&ecirc;n ống k&iacute;nh<br />- T&iacute;ch hợp đ&egrave;n flash v&agrave; chế độ Auto Expose Mode<br />- Điều chỉnh độ s&aacute;ng bằng tay<br />- Chế độ Hi-Key<br />- Ống k&iacute;nh Fujinon 60mm F/12.7</p>", 
+    "Price" : NumberInt(1990000), 
+    "CatID" : NumberInt(2), 
+    "IDNSX" : NumberInt(2), 
+    "Quantity" : NumberInt(12), 
+    "SLB" : NumberInt(3), 
+    "LX" : NumberInt(228), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "2"
+}
+{ 
+    "_id" : ObjectId("5af7e935a8cc4309f0b30441"), 
+    "ProName" : "Canon IXUS 190", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>- Bộ xử l&yacute; h&igrave;nh ảnh DIGIC 4+<br />- 20 megapixel<br />- Zoom quang học 10x (24 - 240 mm)<br />- ZoomPlus 20x<br />- ISO 100 &ndash; ISO800<br />- Kết nối Wi-Fi &amp; NFC</p>", 
+    "Price" : NumberInt(3850000), 
+    "CatID" : NumberInt(2), 
+    "IDNSX" : NumberInt(1), 
+    "Quantity" : NumberInt(6), 
+    "SLB" : NumberInt(2), 
+    "LX" : NumberInt(14), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "2"
+}
+{ 
+    "_id" : ObjectId("5af7e936a8cc4309f0b30442"), 
+    "ProName" : "Fujifilm X100F", 
+    "TinyDes" : "Bảo hành 12 tháng chính hãng", 
+    "FullDes" : "<p>- Cảm biến 24.3MP APS-C X-Trans CMOS III<br />- Xử l&yacute; h&igrave;nh ảnh: X-Processor Pro<br />- Fujinon 23mm f/2 Lens<br />- K&iacute;nh ngắm lai quang học v&agrave; điện tử<br />- M&agrave;n h&igrave;nh LCD 3.0\" 1.04m-Dot<br />- Quya video Full HD 1080p / 60 fps<br />- 49 điểm lấy n&eacute;t theo pha trong 91-Point AF<br />- Độ nhạy s&aacute;ng mở rộng: ISO 51200<br />- Chụp ảnh li&ecirc;n tục to 8 fps<br />- T&iacute;ch hợp ISO Dial v&agrave; đ&ograve;n bẫy lấy n&eacute;t ph&iacute;a sau<br />- Phi&ecirc;n bản m&agrave;u đen</p>", 
+    "Price" : NumberInt(29990000), 
+    "CatID" : NumberInt(2), 
+    "IDNSX" : NumberInt(2), 
+    "Quantity" : NumberInt(3), 
+    "SLB" : NumberInt(1), 
+    "LX" : NumberInt(137), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "3"
+}
+{ 
+    "_id" : ObjectId("5af7e936a8cc4309f0b30443"), 
+    "ProName" : "Nikon Coolpix S3700", 
+    "TinyDes" : "Bảo hành 12 tháng chính hãng", 
+    "FullDes" : "<p>- Cảm biến CCD 1/2.3\" 20.1MP<br />- Ống k&iacute;nh khẩu độ f/3.7-6.6<br />- Ti&ecirc;u cự 25-200mm (tr&ecirc;n định dạng 35mm)<br />- Zoom quang học 8x (16x Dynamic Fine Zoom)<br />- M&agrave;n h&igrave;nh LCD 2.7\" 230k-Dot<br />- Quay phim HD 720p<br />- C&oacute; đến16 bối cảnh chụp<br />- Kết nối Wi-Fi v&agrave; NFC<br />- Chụp ảnh li&ecirc;n tục 1.1 fps<br />- ISO 80&ndash;1600, ISO 3200 (khả dụng khi sử dụng Chế độ tự động)<br />- C&oacute; 6 t&ugrave;y chọn m&agrave;u: hồng, đỏ, bạc, đen, xanh c&oacute; họa tiết, xanh</p>", 
+    "Price" : NumberInt(3000000), 
+    "CatID" : NumberInt(2), 
+    "IDNSX" : NumberInt(3), 
+    "Quantity" : NumberInt(7), 
+    "SLB" : NumberInt(15), 
+    "LX" : NumberInt(1655), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "1"
+}
+{ 
+    "_id" : ObjectId("5af7e936a8cc4309f0b30444"), 
+    "ProName" : "Nikon Coolpix L840", 
+    "TinyDes" : "Bảo hành 12 tháng chính hãng", 
+    "FullDes" : "<p>- Cảm biến h&igrave;nh ảnh CMOS 16MP<br />- Ti&ecirc;u cự tương đương 22.5-855mm ( định dạng 35mm)<br />- M&agrave;n h&igrave;nh LCD 3\" với 921K Dot<br />- Quay video Full HD 1080p 30fps<br />- T&iacute;ch hợp kết nối Wifi v&agrave; NFC<br />- Chức năng zoom Dynamic Fine 76x<br />- ISO 6400 v&agrave; tốc độ chụp 7.4fps<br />- Chế độ Scene Auto Selector</p>", 
+    "Price" : NumberInt(5000000), 
+    "CatID" : NumberInt(2), 
+    "IDNSX" : NumberInt(3), 
+    "Quantity" : NumberInt(12), 
+    "SLB" : NumberInt(6), 
+    "LX" : NumberInt(258), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "2"
+}
+{ 
+    "_id" : ObjectId("5af7e936a8cc4309f0b30445"), 
+    "ProName" : "Sony Cyber-Shot DSC-W830 ", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>- Cảm biến 20.1MP 1/2.3\" Super HAD CCD<br />- Ống k&iacute;nh Zeiss Vario ti&ecirc;u cự 25-200mm (tương đương tr&ecirc;n định dạng 35mm)<br />- M&agrave;n h&igrave;nh LCD: 2.7\" 230k-Dot<br />- Quay video HD 1280 x 720/30 fps<br />- Bộ xử l&yacute; h&igrave;nh ảnh BIONZ<br />- Hệ thống ổn định h&igrave;nh ảnh quang học<br />- ISO 80-3200<br />- G&oacute;c Chụp 3600<br />- Khe cắm thẻ MS Duo v&agrave; SD<br />- Cổng USB 2.0, Composite HD</p>", 
+    "Price" : NumberInt(2590000), 
+    "CatID" : NumberInt(2), 
+    "IDNSX" : NumberInt(4), 
+    "Quantity" : NumberInt(1), 
+    "SLB" : NumberInt(1), 
+    "LX" : NumberInt(570), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "3"
+}
+{ 
+    "_id" : ObjectId("5af7e936a8cc4309f0b30446"), 
+    "ProName" : "Sony A6000", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>- Cảm biến 24.3MP APS-C Exmor APS HD CMOS<br />- Bộ xử l&yacute; ảnh BIONZ X<br />- K&iacute;nh ngắm OLED EVF Tru-Finder 0.39\" 1,440k-Dot<br />- M&agrave;n h&igrave;nh LCD: 3.0\" 921k-Dot<br />- Quay video Full HD 1080p XAVC S / 24/60 fps<br />- Kết nối Wi-Fi v&agrave; NFC<br />- Fast Hybrid AF &amp; 179 điểm lấy n&eacute;t theo pha<br />- Chụp ảnh li&ecirc;n tục 11 fps v&agrave; ISO 25600</p>", 
+    "Price" : NumberInt(11990000), 
+    "CatID" : NumberInt(2), 
+    "IDNSX" : NumberInt(4), 
+    "Quantity" : NumberInt(4), 
+    "SLB" : NumberInt(4), 
+    "LX" : NumberInt(235), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "2"
+}
+{ 
+    "_id" : ObjectId("5af7e937a8cc4309f0b30447"), 
+    "ProName" : "Canon PowerShot G7 X II", 
+    "TinyDes" : "Bảo hành 24 thánh chính hãng", 
+    "FullDes" : "<p>- Cảm biến 1 inch CMOS 20MP<br />- Bộ xử l&yacute; h&igrave;nh ảnh DIGIC7<br />- Ống k&iacute;nh : 24-100mm f/1.8-2.8 v&agrave; hệ thống chống rung (IS), 9 l&aacute; khẩu<br />- Tốc độ chụp li&ecirc;n tục 8 fps<br />- M&agrave;n h&igrave;nh LCD 3&Prime; 1.04 triệu điểm ảnh (tilt 180&deg; up, 45&deg; down)<br />- Quay video Full HD<br />- Time-lapse movie<br />- Hỗ trợ kết nối Wi-FI, NFC</p>", 
+    "Price" : NumberInt(14490000), 
+    "CatID" : NumberInt(2), 
+    "IDNSX" : NumberInt(1), 
+    "Quantity" : NumberInt(4), 
+    "SLB" : NumberInt(3), 
+    "LX" : NumberInt(569), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "5"
+}
+{ 
+    "_id" : ObjectId("5af7e937a8cc4309f0b30448"), 
+    "ProName" : "Sony Alpha a7R III", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>ISO 102400<br />Bộ xử l&yacute; h&igrave;nh ảnh BIONZ X &amp; LSI<br />Hệ thống lấy n&eacute;t 399 điểm<br />Chụp li&ecirc;n tục 10 khung h&igrave;nh/gi&acirc;y<br />Bộ cảm biến CMOS BSI CMOS 42MP Full-Frame Exmor R<br />Video UHD 4K30p với HLG &amp; S-Log3 Gammas<br />3,9m-Dot Tru-Finder OLED EVF<br />M&agrave;n h&igrave;nh cảm ứng LCD 3.0 \"1.44 triệu điểm ảnh<br />Chống rung 5 trục (5-Axis)<br />Pixel Shift Multi Shooting<br />T&iacute;ch hợp Wi-Fi / Bluetooth, khe SD đ&ocirc;i<br />USB 3.0 cổng loại-C &amp; thiết bị đầu cuối đồng bộ h&oacute;a PC</p>", 
+    "Price" : NumberInt(77990000), 
+    "CatID" : NumberInt(3), 
+    "IDNSX" : NumberInt(4), 
+    "Quantity" : NumberInt(2), 
+    "SLB" : NumberInt(2), 
+    "LX" : NumberInt(14), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "5"
+}
+{ 
+    "_id" : ObjectId("5af7e937a8cc4309f0b30449"), 
+    "ProName" : "Fujifilm X-E3 Body Sliver", 
+    "TinyDes" : "Bảo hành 12 tháng chính hãng", 
+    "FullDes" : "<p>- Cảm biến 24.3MP APS-C X-Trans CMOS III<br />- Bộ xử l&yacute; h&igrave;nh ảnh X-Processor Pro<br />- M&agrave;n h&igrave;nh cảm ứng TFT LCD 3\" 1.04 triệu điểm ảnh<br />- Ống ngắm điện tử OLED k&iacute;ch thước 0.77\" 2,36MP<br />- ISO 51200, tốc độ chụp 8fps<br />- Khả năng quay video 4K UHD<br />- Khả năng kết nối wifi<br />- Hệ thống lấy n&eacute;t AF 325 điểm<br />- Body kh&aacute;ng nước, bụi bẩn<br />- Tương th&iacute;ch thẻ nhớ SD, SHHC, SDXC, UHS-II</p>", 
+    "Price" : NumberInt(21990000), 
+    "CatID" : NumberInt(3), 
+    "IDNSX" : NumberInt(2), 
+    "Quantity" : NumberInt(4), 
+    "SLB" : NumberInt(1), 
+    "LX" : NumberInt(812), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "1"
+}
+{ 
+    "_id" : ObjectId("5af7e937a8cc4309f0b3044a"), 
+    "ProName" : "Fujifilm GFX 50S", 
+    "TinyDes" : "Bảo hành 12 tháng chính hãng", 
+    "FullDes" : "<p>- M&aacute;y ảnh Medium Format thuộc d&ograve;ng kh&ocirc;ng gương lật<br />- Cảm biến CMOS 51.4MP 43.8 x 32.9mm<br />- Bộ xử l&yacute; h&igrave;nh ảnh X-Processor Pro<br />- K&iacute;nh ngắm điện tử OLED EVF 3.69m-Dot, c&oacute; thể th&aacute;o rời<br />- M&agrave;n h&igrave;nh cảm ứng LCD 3.2\" 2.36m-Dot<br />- 117-Point Contrast-Detection AF System<br />- Độ nhạy s&aacute;ng mở rộng ISO 50-102400,<br />- Chụp ảnh li&ecirc;n tục 3 fps<br />- Quay video Full HD 1080p/30 fps<br />- Thiết kế chống chịu thời tiết khắc nghiệt</p>", 
+    "Price" : NumberInt(150000000), 
+    "CatID" : NumberInt(3), 
+    "IDNSX" : NumberInt(2), 
+    "Quantity" : NumberInt(1), 
+    "SLB" : NumberInt(4), 
+    "LX" : NumberInt(5683), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "5"
+}
+{ 
+    "_id" : ObjectId("5af7e937a8cc4309f0b3044b"), 
+    "ProName" : "Sony A6700", 
+    "TinyDes" : "Bảo hành 24 thánh chính hãng", 
+    "FullDes" : "<p>- Cảm biến 24.3MP APS-C Exmor APS HD CMOS<br />- Bộ xử l&yacute; ảnh BIONZ X<br />- K&iacute;nh ngắm OLED EVF Tru-Finder 0.39\" 1,440k-Dot<br />- M&agrave;n h&igrave;nh LCD: 3.0\" 921k-Dot<br />- Quay video Full HD 1080p XAVC S / 24/60 fps<br />- Kết nối Wi-Fi v&agrave; NFC<br />- Fast Hybrid AF &amp; 179 điểm lấy n&eacute;t theo pha<br />- Chụp ảnh li&ecirc;n tục 11 fps v&agrave; ISO 25600</p>", 
+    "Price" : NumberInt(10990000), 
+    "CatID" : NumberInt(3), 
+    "IDNSX" : NumberInt(4), 
+    "Quantity" : NumberInt(8), 
+    "SLB" : NumberInt(5), 
+    "LX" : NumberInt(427), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "6"
+}
+{ 
+    "_id" : ObjectId("5af7e938a8cc4309f0b3044c"), 
+    "ProName" : "Sony Alpha A6300", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>- Cảm biến CMOS APS-C 24MP<br />- Bộ xử l&yacute; h&igrave;nh ảnh BIONZ X<br />- Hệ thống lấy n&eacute;t AF 425 điểm theo pha<br />- Chụp li&ecirc;n tiếp 11fps (8fps ở chế độ live-view)<br />- C&oacute; chế độ chụp y&ecirc;n lặng (Silent shooting như A7RII)<br />- Dải nhạy s&aacute;ng ISO 100 - 51200<br />- Quay video 4K l&ecirc;n tới 100Mbps, S-Log3 Gamma<br />- LCD 3.0\" 921.6K</p>", 
+    "Price" : NumberInt(19990000), 
+    "CatID" : NumberInt(3), 
+    "IDNSX" : NumberInt(4), 
+    "Quantity" : NumberInt(2), 
+    "SLB" : NumberInt(6), 
+    "LX" : NumberInt(131), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "2"
+}
+{ 
+    "_id" : ObjectId("5af7e938a8cc4309f0b3044d"), 
+    "ProName" : "Canon EOS M5", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>- Cảm biến CMOS APS-C 24.2MP<br />- Bộ xử l&yacute; h&igrave;nh ảnh DIGIC 7<br />- M&agrave;n h&igrave;nh cảm ứng LCD 3.2\" 1.62m-Dot<br />- Quay phim Full HD 1080p tại 60fps<br />- T&iacute;ch hợp kết nối Wifi v&agrave; NFC, Bluetooth Smart<br />- Dual Pixel CMOS AF<br />- Tốc độ chụp li&ecirc;n tiếp 9fps v&agrave; ISO 25600<br />- Hệ thống chống rung 5 trục IS<br />- Ống k&iacute;nh EF-M 18-150mm F/3.5-6.3 IS STM</p>", 
+    "Price" : NumberInt(20990000), 
+    "CatID" : NumberInt(3), 
+    "IDNSX" : NumberInt(1), 
+    "Quantity" : NumberInt(1), 
+    "SLB" : NumberInt(8), 
+    "LX" : NumberInt(568), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "4"
+}
+{ 
+    "_id" : ObjectId("5af7e938a8cc4309f0b3044e"), 
+    "ProName" : "Canon EOS M3", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>- Cảm biến CMOS APS-C 24.2MP<br />- Cảm biến h&igrave;nh ảnh DIGIC 6<br />- M&agrave;n h&igrave;nh cảm ứng LCD 3.0\" 1.040k-Dot<br />- Quay phim Full HD 1080p tại 24/24/30fps<br />- T&iacute;ch hợp kết nối NFC v&agrave; Wifi<br />- C&ocirc;ng nghệ lấy n&eacute;t Hybrid CMOS AF với 49 điểm<br />- ISO 100-12800, mở rộng 25600<br />- Ống k&iacute;nh EF-M 15-45mm F/3.5-6.3 IS STM</p>", 
+    "Price" : NumberInt(9990000), 
+    "CatID" : NumberInt(3), 
+    "IDNSX" : NumberInt(1), 
+    "Quantity" : NumberInt(16), 
+    "SLB" : NumberInt(5), 
+    "LX" : NumberInt(798), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "4"
+}
+{ 
+    "_id" : ObjectId("5af7e938a8cc4309f0b3044f"), 
+    "ProName" : "Canon EOS M10", 
+    "TinyDes" : "Bảo hành 12 tháng chính hãng", 
+    "FullDes" : "<p>- Cảm biến CMOS APS-C 18MP<br />- Bộ xử l&yacute; h&igrave;nh ảnh DIGIC 6<br />- M&agrave;n h&igrave;nh cảm ứng LCD 3.0\" 1.04m-Dot<br />- Kết nối Wifi, NFC<br />- Hệ thống lấy n&eacute;t Hybrid CMOS AF 49 điểm<br />- Tốc độ chụp li&ecirc;n tiếp 4.6fps v&agrave;<br />- ISO 100-12800, c&oacute; thể mở rộng 25600<br />- Creative Assist v&agrave; chế độ Self Portrait<br />- Ống k&iacute;nh EF-M 15-45mm F/3.5-6.3 IS STM<br />- Sản phẩm c&oacute; hai m&agrave;u: trắng, đen</p>", 
+    "Price" : NumberInt(7990000), 
+    "CatID" : NumberInt(3), 
+    "IDNSX" : NumberInt(1), 
+    "Quantity" : NumberInt(24), 
+    "SLB" : NumberInt(4), 
+    "LX" : NumberInt(980), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "4"
+}
+{ 
+    "_id" : ObjectId("5af7e938a8cc4309f0b30450"), 
+    "ProName" : "Nikon Coolpix A900", 
+    "TinyDes" : "Bảo hành 12 tháng chính hãng", 
+    "FullDes" : "<p>- Cảm biến CMOS BSI 20MP<br />- Ti&ecirc;u cự tương đương 24-840mm theo định dạng 35mm<br />- Zoom quang học 35x, Dynamic Zoom 70x<br />- M&agrave;n h&igrave;nh LCD 3 inch 921K-Dot<br />- Quay video UHD 4K/30fps<br />- Kết nối Bluetooth, Wifi, NFC<br />- ISO 3200, tốc độ chụp li&ecirc;n tục 7fps<br />- Ống k&iacute;nh Nikon F/3.4- 6.9 ED</p>", 
+    "Price" : NumberInt(10990000), 
+    "CatID" : NumberInt(3), 
+    "IDNSX" : NumberInt(3), 
+    "Quantity" : NumberInt(2), 
+    "SLB" : NumberInt(5), 
+    "LX" : NumberInt(4569), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "5"
+}
+{ 
+    "_id" : ObjectId("5af7e939a8cc4309f0b30451"), 
+    "ProName" : "Canon EOS M6", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>- Cảm biến CMOS 24.2 MPs<br />- Bộ xử l&yacute; h&igrave;nh ảnh Canon DIGIC 6<br />- ISO đến 25,600<br />- Chụp li&ecirc;n tiếp tới 7 h&igrave;nh/gi&acirc;y<br />- Trang bị hệ thống lấy n&eacute;t tự động Dual Pixel CMOS AF<br />- AF points: 49 điểm<br />- Tốc độ m&agrave;n trập: 1 / 4,000 to 30 seconds, bulb, flash sync 1/200 sec<br />- T&iacute;ch hợp đ&egrave;n flash trong, Ống ngắm EVF-DC1 c&oacute; thể th&aacute;o rời<br />- Quay phim full HD, HD, VGA<br />- Kết nối Wifi, NFC, Bluetooth<br />- Tương th&iacute;ch hệ thống ống k&iacute;nh EF-M, EF-S, EF của Canon<br />- M&agrave;n h&igrave;nh lật xoay 3.2\" cảm ứng 1.040.000 pixels<br />- Ống kit: EF-M 15-45mm f/3.5-6.3 IS STM<br />- Phi&ecirc;n bản m&agrave;u đen</p>", 
+    "Price" : NumberInt(14490000), 
+    "CatID" : NumberInt(3), 
+    "IDNSX" : NumberInt(1), 
+    "Quantity" : NumberInt(5), 
+    "SLB" : NumberInt(12), 
+    "LX" : NumberInt(349), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "3"
+}
+{ 
+    "_id" : ObjectId("5af7e939a8cc4309f0b30452"), 
+    "ProName" : "GoPro Hero 6", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>Cảm biến 12 MP<br />Khả năng chống nước ở độ s&acirc;u l&ecirc;n tới 10 m&eacute;t<br />Quay video 4K ở tốc độ 60 khung h&igrave;nh/gi&acirc;y<br />Quay được video slow motion full HD 1080 240 fps<br />Chip xử l&yacute; mới với tốc độ cao<br />Sử dụng Wi Fi 5GHz<br />Tốc độ truyền tải dữ liệu sẽ nhanh hơn gấp 3 lần<br />Chụp ảnh 12MP với 2 định dạng l&agrave; JPG hoặc RAW<br />C&oacute; chế độ Wide Dynamic Range, chụp ảnh HDR</p>", 
+    "Price" : NumberInt(11490000), 
+    "CatID" : NumberInt(4), 
+    "IDNSX" : NumberInt(6), 
+    "Quantity" : NumberInt(11), 
+    "SLB" : NumberInt(7), 
+    "LX" : NumberInt(249), 
+    "XX" : "Thương hiệu Mỹ xuất xứ Trung Quốc", 
+    "SLAnh" : "3"
+}
+{ 
+    "_id" : ObjectId("5af7e939a8cc4309f0b30453"), 
+    "ProName" : "Máy bay DJI Mavic Pro Platinum More Combo", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>- Battery to power bank adaptor x1<br />- Battery charging HUB x1<br />- Car charger x1<br />- Intelligent flight Battery x2<br />- Folding propellers x2<br />- Quay phim: 4K (30fps)<br />- C&ocirc;ng nghệ Truyền dẫn t&iacute;n hiệu OcuSync<br />- T&iacute;ch hợp ứng dụng DJI GO<br />- Chức năng FlightAutonomy ph&aacute;t hiện trở ngại<br />- Thời gian bay 27 ph&uacute;t<br />- Tốc độ 65 km / giờ ở chế độ thể thao</p>", 
+    "Price" : NumberInt(32990000), 
+    "CatID" : NumberInt(4), 
+    "IDNSX" : NumberInt(5), 
+    "Quantity" : NumberInt(0), 
+    "SLB" : NumberInt(5), 
+    "LX" : NumberInt(366), 
+    "XX" : "Mỹ", 
+    "SLAnh" : "1"
+}
+{ 
+    "_id" : ObjectId("5af7e939a8cc4309f0b30454"), 
+    "ProName" : "Máy bay DJI Phantom 4 PRO Plus", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>- Camera trang bị cảm biến ảnh CMOS 1inch 20MP hỗ trợ quay phim 4K<br />- Tốc độ cất / hạ cạnh: S mode 6m/s / 4m/s; P mode 5m/s / 3m/s<br />- Tốc độ bay: S mode 72km/s; A mode 58km/h; P mode 50km/h<br />- Bay cao so với mặt đất: 6000m<br />- T&iacute;ch hợp cảm biến hồng ngoại gi&uacute;p tr&aacute;nh vật cản trong phạm vi 7m<br />- Hệ thống bay tự động th&ocirc;ng minh Flight Autonomy<br />- Chế độ bay Tayfly tự động bay tới điểm đ&atilde; được x&aacute;c định v&agrave; tr&aacute;nh vật cản tr&ecirc;n đường đi<br />- Chế độ bay Draw bay theo đường vẽ tr&ecirc;n m&agrave;n h&igrave;nh v&agrave; vẫn giữ độ cao<br />- Chế độ nhận diện cử chỉ Gestune Mode gi&uacute;p bạn điều khiển m&aacute;y bay chụp h&igrave;nh th&ocirc;ng qua cử chỉ ng&oacute;n tay<br />- Phi&ecirc;n bản k&egrave;m Remote Lightbridge c&oacute; m&agrave;n h&igrave;nh theo d&otilde;i, chất lượng truyền t&iacute;n hiệu tốt</p>", 
+    "Price" : NumberInt(41490000), 
+    "CatID" : NumberInt(4), 
+    "IDNSX" : NumberInt(5), 
+    "Quantity" : NumberInt(1), 
+    "SLB" : NumberInt(3), 
+    "LX" : NumberInt(36), 
+    "XX" : "Mỹ", 
+    "SLAnh" : "5"
+}
+{ 
+    "_id" : ObjectId("5af7e939a8cc4309f0b30455"), 
+    "ProName" : "Máy bay điều khiển DJI Spark Alpine White", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>- Camera trang bị cảm biến ảnh CMOS 1inch 20MP hỗ trợ quay phim 4K<br />- Tốc độ cất / hạ cạnh: S mode 6m/s / 4m/s; P mode 5m/s / 3m/s<br />- Tốc độ bay: S mode 72km/s; A mode 58km/h; P mode 50km/h<br />- Bay cao so với mặt đất: 6000m<br />- T&iacute;ch hợp cảm biến hồng ngoại gi&uacute;p tr&aacute;nh vật cản trong phạm vi 7m<br />- Hệ thống bay tự động th&ocirc;ng minh Flight Autonomy<br />- Chế độ bay Tayfly tự động bay tới điểm đ&atilde; được x&aacute;c định v&agrave; tr&aacute;nh vật cản tr&ecirc;n đường đi<br />- Chế độ bay Draw bay theo đường vẽ tr&ecirc;n m&agrave;n h&igrave;nh v&agrave; vẫn giữ độ cao<br />- Chế độ nhận diện cử chỉ Gestune Mode gi&uacute;p bạn điều khiển m&aacute;y bay chụp h&igrave;nh th&ocirc;ng qua cử chỉ ng&oacute;n tay<br />- Phi&ecirc;n bản k&egrave;m Remote Lightbridge c&oacute; m&agrave;n h&igrave;nh theo d&otilde;i, chất lượng truyền t&iacute;n hiệu tốt</p>", 
+    "Price" : NumberInt(11590000), 
+    "CatID" : NumberInt(4), 
+    "IDNSX" : NumberInt(5), 
+    "Quantity" : NumberInt(7), 
+    "SLB" : NumberInt(5), 
+    "LX" : NumberInt(735), 
+    "XX" : "Mỹ", 
+    "SLAnh" : "4"
+}
+{ 
+    "_id" : ObjectId("5af7e93aa8cc4309f0b30456"), 
+    "ProName" : "Camera hành trình Ricoh - WG-M1", 
+    "TinyDes" : "Bảo hành 12 tháng chính hãng", 
+    "FullDes" : "<p>- Hỗ trợ quay video 1080p30 &amp; 720p60<br />- Độ ph&acirc;n giải h&igrave;nh ảnh 14MP<br />- Ống k&iacute;nh g&oacute;c rộng<br />- Chống nước ở độ s&acirc;u 10m<br />- Chống sốc ở độ cao &lt;= 2m<br />- Hoạt động được ở thời tiết 14&deg;F<br />- Slow-Motion 120 fps<br />- Thiết kế chống bụi, dễ cầm nắm v&agrave; điều khiển<br />- Đầu ra: Micro HDMI<br />- C&oacute; kết nối Wi-Fi<br />- Bao gồm Flat Adhesive Mount</p>", 
+    "Price" : NumberInt(5490000), 
+    "CatID" : NumberInt(4), 
+    "IDNSX" : NumberInt(6), 
+    "Quantity" : NumberInt(10), 
+    "SLB" : NumberInt(5), 
+    "LX" : NumberInt(350), 
+    "XX" : "Mỹ", 
+    "SLAnh" : "1"
+}
+{ 
+    "_id" : ObjectId("5af7e93aa8cc4309f0b30457"), 
+    "ProName" : "Action Cam Sony HDR- AS300R", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>-M&aacute;y quay h&agrave;nh động Full HD<br />-Định dạng ghi h&igrave;nh: XAVC S (HD), MP4<br />-G&oacute;c quay Wide/Medium/Narrow, ống k&iacute;nh Carl Zeiss Tessar F2.8<br />-Ổn định h&igrave;nh ảnh: Balanced Optical SteadyShot with Active mode<br />-Cảm biến: 1/2.5 type (7.20 mm) back-illuminated \"Exmor R\" CMOS Sensor<br />- Bộ xử l&yacute; ảnh BIONZ X<br />-Độ ph&acirc;n giải hiệu dụng quay phim v&agrave; chụp h&igrave;nh 8.2MP<br />-&Acirc;m thanh: stereo 2 k&ecirc;nh<br />-Kết nối với điện thoại th&ocirc;ng minh qua WiFi hoặc NFC<br />-GPS: C&oacute;<br />-T&iacute;nh năng kh&aacute;c: Loop Recording, Motion Shot LE, Burst Shooting, 4K Time-lapse capture, Live Streaming<br />-Th&acirc;n máy chống nước chuẩn IPX4</p>", 
+    "Price" : NumberInt(9490000), 
+    "CatID" : NumberInt(4), 
+    "IDNSX" : NumberInt(4), 
+    "Quantity" : NumberInt(12), 
+    "SLB" : NumberInt(6), 
+    "LX" : NumberInt(4790), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "5"
+}
+{ 
+    "_id" : ObjectId("5af7e93ba8cc4309f0b3045f"), 
+    "ProName" : "Sony HDR-PJ440E", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>- Quay video Full HD<br />- Độ ph&acirc;n giải ảnh tĩnh 9.2MP<br />- Cảm biến Exmor R CMOS<br />- Ống k&iacute;nh Zeiss zoom quang học 30x<br />- T&iacute;ch hợp m&aacute;y chiếu<br />- T&iacute;ch hợp Wifi/NFC</p>", 
+    "Price" : NumberInt(8990000), 
+    "CatID" : NumberInt(5), 
+    "IDNSX" : NumberInt(4), 
+    "Quantity" : NumberInt(8), 
+    "SLB" : NumberInt(8), 
+    "LX" : NumberInt(126), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "3"
+}
+{ 
+    "_id" : ObjectId("5af7e93aa8cc4309f0b30458"), 
+    "ProName" : "GoPro Hero 5", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>- Hỗ trợ quay Video 4K30, 2.7K60, 1080p120<br />- Chụp h&igrave;nh 12MP tại 30fps<br />- Ống k&iacute;nh si&ecirc;u rộng<br />- Chống thấm nước với độ s&acirc;u l&ecirc;n đến 10m<br />- Điều khiển bằng giọng n&oacute;i<br />- M&agrave;n h&igrave;nh cảm ứng<br />- Gi&aacute;m s&aacute;t v&agrave; điều khiển từ xa th&ocirc;ng qua kết nối Wifi<br />- Time Lapse</p>", 
+    "Price" : NumberInt(8690000), 
+    "CatID" : NumberInt(4), 
+    "IDNSX" : NumberInt(6), 
+    "Quantity" : NumberInt(7), 
+    "SLB" : NumberInt(7), 
+    "LX" : NumberInt(4790), 
+    "XX" : "Thương hiệu Mỹ xuất xứ Trung Quốc", 
+    "SLAnh" : "5"
+}
+{ 
+    "_id" : ObjectId("5af7e93aa8cc4309f0b30459"), 
+    "ProName" : "Action Cam Sony HDR-AS50 Full HD", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>- M&aacute;y quay h&agrave;nh động Full HD 1920x1080 60p/50p<br />- G&oacute;c quay 170 độ, ống k&iacute;nh Carl Zeiss Tessar<br />- Chống rung Steady shot<br />- Cảm biến 1/2.3 type \"Exmor R\" CMOS<br />- Bộ xử l&yacute; ảnh BIONZ X<br />- Độ ph&acirc;n giải quay phim v&agrave; chụp h&igrave;nh 11.9 megapixel<br />- &Acirc;m thanh stereo 2 k&ecirc;nh<br />- Kết nối: WiFi, Bluetooth<br />- Chụp timelapse (1s/2s/5s/10s/30s/60s), Loop recording<br />- Trọng lượng: khoảng 83 g (bao gồm cả pin)<br />- K&iacute;ch thước: Khoảng 24,2 x 47,0 x 83,0 mm<br />- Pin tương th&iacute;ch NP-BX1<br />- Phụ kiện đi k&egrave;m: Pin, C&aacute;p USB, vỏ bọc chống nước 60m, Kh&oacute;a g&agrave;i, D&acirc;y đeo cổ tay, Bộ ng&agrave;m chuyển đổi v&agrave; Gi&aacute; gắn.</p>", 
+    "Price" : NumberInt(5490000), 
+    "CatID" : NumberInt(4), 
+    "IDNSX" : NumberInt(4), 
+    "Quantity" : NumberInt(2), 
+    "SLB" : NumberInt(34), 
+    "LX" : NumberInt(578), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "6"
+}
+{ 
+    "_id" : ObjectId("5af7e93aa8cc4309f0b3045a"), 
+    "ProName" : "Máy quay phim 4K HDR FDR-AX700", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>- Quay chuy&ecirc;n nghiệp v&agrave; đa dạng</p>\r\n<p>- Phạm vi lấy n&eacute;t tự động rộng</p>\r\n<p>- Phản hồi lấy n&eacute;t tự động nhanh</p>\r\n<p>- Ghi video 4K HDR</p>\r\n<p>-Tự động lấy n&eacute;t theo pha 273 điểm</p>\r\n<p>- Ống k&iacute;nh Zeiss Vario Sonnar T &nbsp;</p>\r\n<p>-Ổn định h&igrave;nh ảnh SteadyShot</p>\r\n<p>-M&agrave;n h&igrave;nh LCD OLED EVF / 3,5 \"OLED EVRED 0,39\"</p>\r\n<p>-Tốc độ ghi 120 fps</p>\r\n<p>-S-Log v&agrave; S-Gamut Profile</p>", 
+    "Price" : NumberInt(49900000), 
+    "CatID" : NumberInt(5), 
+    "IDNSX" : NumberInt(6), 
+    "Quantity" : NumberInt(2), 
+    "SLB" : NumberInt(2), 
+    "LX" : NumberInt(720), 
+    "XX" : "Mỹ", 
+    "SLAnh" : "5"
+}
+{ 
+    "_id" : ObjectId("5af7e93ba8cc4309f0b3045b"), 
+    "ProName" : "Canon XA35", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>- Cảm biến: 1/2.84\" HD CMOS Pro<br />- 1920x1080 up to 59.94p<br />- Lens zoom quang học: 20x<br />- HD/SD-SDI Output<br />- Wide DR Gamma (600%) Mode<br />- Highlight Priority Mode<br />- OLED cảm ứng 3.5\" OLED &amp; EVF<br />- 2x XLR Audio Inputs<br />- Khe thẻ nhớ: Dual SD/SDHC/SDXC<br />- Kết nối Wi-Fi với FTP</p>", 
+    "Price" : NumberInt(50990000), 
+    "CatID" : NumberInt(5), 
+    "IDNSX" : NumberInt(1), 
+    "Quantity" : NumberInt(2), 
+    "SLB" : NumberInt(1), 
+    "LX" : NumberInt(71), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "1"
+}
+{ 
+    "_id" : ObjectId("5af7e93ba8cc4309f0b3045c"), 
+    "ProName" : "Sony FDR- AX100", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>- Quay phim 4K Ultra HD tại 30fps<br />- Độ ph&acirc;n giải chụp ảnh tĩnh 20MP<br />- Cảm biến CMOS Exmor R 1\"<br />- Ống k&iacute;nh Zeiss Varo Sonnar T<br />- Zoom quang học 12x, mở rộng 24x<br />- C&ocirc;ng nghệ ổn định h&igrave;nh ảnh quang học Optical SteadyShot<br />- Ghi tốc độ cao 120fps<br />- Định dạng quay XAVC S, AVCHD, MP4<br />- Kết nối Wifi, NFC</p>", 
+    "Price" : NumberInt(44990000), 
+    "CatID" : NumberInt(5), 
+    "IDNSX" : NumberInt(4), 
+    "Quantity" : NumberInt(2), 
+    "SLB" : NumberInt(3), 
+    "LX" : NumberInt(569), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "4"
+}
+{ 
+    "_id" : ObjectId("5af7e93ba8cc4309f0b3045d"), 
+    "ProName" : "Sony FDR-AXP55E", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>- Quay phim 4K Ultra HD 24/25p<br />- Độ ph&acirc;n giải ảnh tĩnh 16.6MP<br />- Bộ cảm biến CMOS Exmor R<br />- Ống k&iacute;nh Zeiss Vario Sonnar T ti&ecirc;u cự 26.8mm<br />- Zoom quang học 20x, mở rộng 40x<br />- C&ocirc;ng nghệ ổn định h&igrave;nh ảnh SteadyShot<br />- Ghi tốc độ cao 100fps<br />- T&iacute;ch hợp m&aacute;y chiếu<br />- Hỗ trợ kết nối Wifi, NFC</p>", 
+    "Price" : NumberInt(26990000), 
+    "CatID" : NumberInt(5), 
+    "IDNSX" : NumberInt(4), 
+    "Quantity" : NumberInt(1), 
+    "SLB" : NumberInt(5), 
+    "LX" : NumberInt(457), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "4"
+}
+{ 
+    "_id" : ObjectId("5af7e93ba8cc4309f0b3045e"), 
+    "ProName" : "Sony HDR-CX900E", 
+    "TinyDes" : "Bảo hành 12 tháng chính hãng", 
+    "FullDes" : "<p>- Cảm biến CMOS Exmor R 1\"<br />- Quay video 1080p<br />- Độ ph&acirc;n giải h&igrave;nh ảnh tĩnh 20MP<br />- Quay định dạng: XAVC S, AVCHD v&agrave; MP4<br />- Ống k&iacute;nh Zeiss Varrio Sonnar T<br />- Ống k&iacute;nh zoom quang học 12x v&agrave; mở rộng 24x<br />- Bộ xử l&yacute; h&igrave;nh ảnh BIONZ X<br />- Chống rung quang học SteadyShot v&agrave; Quay video k&eacute;p<br />- Kết nối Wifi v&agrave; NFC</p>", 
+    "Price" : NumberInt(36990000), 
+    "CatID" : NumberInt(5), 
+    "IDNSX" : NumberInt(4), 
+    "Quantity" : NumberInt(1), 
+    "SLB" : NumberInt(7), 
+    "LX" : NumberInt(236), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "3"
+}
+{ 
+    "_id" : ObjectId("5af7e93ca8cc4309f0b30460"), 
+    "ProName" : "Sony FDR-AX40E", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>- Chất lượng h&igrave;nh ảnh 4K<br />- Cảm biến Exmor R CMOS mới cho chất lượng 4K<br />- Ống k&iacute;nh g&oacute;c rộng Zeiss Vario Sonnar T<br />- Chống rung quang học SteadyShot<br />- Lấy n&eacute;t tự động cực nhanh<br />- Chất lượng h&igrave;nh ảnh cao</p>", 
+    "Price" : NumberInt(22490000), 
+    "CatID" : NumberInt(5), 
+    "IDNSX" : NumberInt(4), 
+    "Quantity" : NumberInt(2), 
+    "SLB" : NumberInt(4), 
+    "LX" : NumberInt(347), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "4"
+}
+{ 
+    "_id" : ObjectId("5af7e93ca8cc4309f0b30461"), 
+    "ProName" : "Sony HDR-CX405E", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>- Quay Video Full HD<br />- Độ ph&acirc;n giải ảnh tĩnh: 9.2 MP<br />- Cảm biến CMOS Exmor R cho chất lượng h&igrave;nh ảnh tuyệt đẹp<br />- Bộ xử l&yacute; h&igrave;nh ảnh Bionz X<br />- Ống k&iacute;nh Zeiss zoom quang học 30x c&oacute; chất lượng ghi h&igrave;nh tuyệt vời<br />- Ổn định h&igrave;nh ảnh Optical SteadyShot hiệu chỉnh rung lắc để lu&ocirc;n ghi được h&igrave;nh ảnh mịn m&agrave;ng v&agrave; ổn định</p>", 
+    "Price" : NumberInt(5990000), 
+    "CatID" : NumberInt(5), 
+    "IDNSX" : NumberInt(4), 
+    "Quantity" : NumberInt(10), 
+    "SLB" : NumberInt(3), 
+    "LX" : NumberInt(458), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "3"
+}
+{ 
+    "_id" : ObjectId("5af7e93ca8cc4309f0b30462"), 
+    "ProName" : "Canon EF 35mm f/1.4L II USM", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>- Ống k&iacute;nh ng&agrave;m EF Mount d&ograve;ng L-Series/ Full-frame Format<br />- Khẩu độ: F/1.4-F/22<br />- C&ocirc;ng nghệ sản xuất thấu k&iacute;nh Blue Spectrum Refractive<br />- Gồm 2 thấu k&iacute;nh phi cầu v&agrave; 1 thấu k&iacute;nh UD<br />- Lớp tr&aacute;ng phủ Subwavelength v&agrave; Fluorine<br />- Động cơ lấy n&eacute;t Ultrasonic Autofocus<br />- Manual Focus Override Full-Time<br />- Cấu tr&uacute;c chống chịu thời tiết<br />- 9 l&aacute; khẩu tr&ograve;n</p>", 
+    "Price" : NumberInt(40990000), 
+    "CatID" : NumberInt(6), 
+    "IDNSX" : NumberInt(1), 
+    "Quantity" : NumberInt(1), 
+    "SLB" : NumberInt(4), 
+    "LX" : NumberInt(988), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "1"
+}
+{ 
+    "_id" : ObjectId("5af7e93ca8cc4309f0b30463"), 
+    "ProName" : "Canon EF 16-35mm f/2.8L III USM", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>- Thuộc d&ograve;ng ống k&iacute;nh L Series<br />- Ống k&iacute;nh EF-Mount / định dạng Full-Frame<br />- Khẩu độ: f/2.8 - 22<br />- Ba thấu k&iacute;nh phi cầu v&agrave; 2 thấu k&iacute;nh UD<br />- Lớp tr&aacute;ng phủ Subwavelength &amp; Air Sphere<br />- Động cơ lấy n&eacute;t USM AF<br />- Lấy n&eacute;t IF, Full-Time MF Override<br />- Lớp phủ Fluorine chống b&aacute;m bụi, dễ vệ sinh<br />- Cấu tr&uacute;c chống bụi, độ ẩm trong m&ocirc;i trường khắc nghiệt<br />- 9 l&aacute; khẩu tr&ograve;n<br />- C&acirc;n nặng: 790g<br />- Đường k&iacute;nh Filter: 82mm</p>", 
+    "Price" : NumberInt(50790000), 
+    "CatID" : NumberInt(6), 
+    "IDNSX" : NumberInt(1), 
+    "Quantity" : NumberInt(2), 
+    "SLB" : NumberInt(6), 
+    "LX" : NumberInt(21), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "1"
+}
+{ 
+    "_id" : ObjectId("5af7e93ca8cc4309f0b30464"), 
+    "ProName" : "Canon EF-S 18-55mm f/3.5-5.6 IS STM", 
+    "TinyDes" : "Bảo hành 12 tháng chính hãng", 
+    "FullDes" : "<p>- Ng&agrave;m EF-S<br />- Ti&ecirc;u cự tương đương 29-88mm ( định dnagj 35mm)<br />- Khẩu độ: F/3.5-5.6<br />- Bao gồm 1 thấu k&iacute;nh phi cầu<br />- Hệ thống ổn định h&igrave;nh ảnh quang học IS<br />- Stepping Motor v&agrave; Hệ thống lấy n&eacute;t trong<br />- Khoảng c&aacute;ch lấy n&eacute;t gần nhất 25cm<br />- Đường k&iacute;nh Filter 58mm</p>", 
+    "Price" : NumberInt(3190000), 
+    "CatID" : NumberInt(6), 
+    "IDNSX" : NumberInt(1), 
+    "Quantity" : NumberInt(8), 
+    "SLB" : NumberInt(7), 
+    "LX" : NumberInt(261), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "3"
+}
+{ 
+    "_id" : ObjectId("5af7e93da8cc4309f0b30465"), 
+    "ProName" : "Nikon AF-S NIKKOR 200-500mm f/5.6E ED", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>Khẩu độ: F5.6<br />Ph&oacute;ng đại: 0,22x<br />Số lượng l&aacute; khẩu: 9<br />Khoảng c&aacute;ch lấy n&eacute;t gần nhất: 2.2m<br />K&iacute;ch thước bộ lọc: &oslash;95mm<br />Hood tương th&iacute;ch: HB-71<br />Trọng lượng: 2300g</p>", 
+    "Price" : NumberInt(29990000), 
+    "CatID" : NumberInt(6), 
+    "IDNSX" : NumberInt(3), 
+    "Quantity" : NumberInt(3), 
+    "SLB" : NumberInt(8), 
+    "LX" : NumberInt(164), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "1"
+}
+{ 
+    "_id" : ObjectId("5af7e93da8cc4309f0b30466"), 
+    "ProName" : "Nikon AF-S 85mm f/1.8G", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>- Ng&agrave;m ống k&iacute;nh F Mount/ FX Format<br />- Khẩu độ: F/1.8-F/16<br />- Lớp tr&aacute;ng phủ Super Integrated Coating<br />- Động cơ lấy n&eacute;t si&ecirc;u &ecirc;m Silent Wave Motor<br />- Hệ thống căn n&eacute;t trong IF<br />- M/A Focus Mode<br />- Khoảng c&aacute;ch lấy n&eacute;t tối thiểu: 80cm<br />- Đường k&iacute;nh Filter 67mm<br />- 7 l&aacute; khẩu tr&ograve;n</p>", 
+    "Price" : NumberInt(10790000), 
+    "CatID" : NumberInt(6), 
+    "IDNSX" : NumberInt(3), 
+    "Quantity" : NumberInt(1), 
+    "SLB" : NumberInt(6), 
+    "LX" : NumberInt(5167), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "2"
+}
+{ 
+    "_id" : ObjectId("5af7e93da8cc4309f0b30467"), 
+    "ProName" : "Nikon AF-S 24-70mm f/2.8E ED VR", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>- Ống k&iacute;nh ng&agrave;m F / định dạng FX<br />- Khẩu độ: f/2.8 - f/22<br />- Ti&ecirc;u cự: 24 - 70mm<br />- Bao gồm thấu k&iacute;nh: ASP/ED, AS, ED &amp; HRI<br />- Lớp tr&aacute;ng phủ Nano cho bề mặt ống k&iacute;nh<br />- Lớp phủ Fluorine cho thấu k&iacute;nh mặt trước v&agrave; sau<br />- Hệ thống lấy n&eacute;t si&ecirc;u thanh tự động AF<br />- Hệ thống ổn định h&igrave;nh ảnh VR<br />- Bao gồm 20 thấu k&iacute;nh xếp th&agrave;nh 16 nh&oacute;m<br />- C&oacute; 9 l&aacute; khẩu tr&ograve;n<br />- Đường k&iacute;nh Filter 82mm<br />- Trọng lượng: khoảng 1.1kg</p>", 
+    "Price" : NumberInt(44990000), 
+    "CatID" : NumberInt(6), 
+    "IDNSX" : NumberInt(3), 
+    "Quantity" : NumberInt(1), 
+    "SLB" : NumberInt(2), 
+    "LX" : NumberInt(5195), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "1"
+}
+{ 
+    "_id" : ObjectId("5af7e93da8cc4309f0b30468"), 
+    "ProName" : "Nikon AF-S DX 18-55mm f/3.5-5.6 DX VR", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>- Ng&agrave;m ống k&iacute;nh F-Mount/ DX Format<br />- Ti&ecirc;u cự tương đương 27-82.5 ( định dạng 35mm)<br />- Khẩu độ: F/3.5-36<br />- Lớp tr&aacute;ng phủ Super Integrated Coating<br />- Động cơ lấy n&eacute;t si&ecirc;u &ecirc;m Silent Wave Motor AF<br />- Hệ thống ổn định h&igrave;nh ảnh Nikon VR II<br />- Thiết kế nhỏ gọn<br />- Khoảng c&aacute;ch lấy n&eacute;t tối thiểu 25cm<br />- Đường k&iacute;nh Filter 52mm<br />- 7 l&aacute; khẩu tr&ograve;n</p>", 
+    "Price" : NumberInt(2190000), 
+    "CatID" : NumberInt(6), 
+    "IDNSX" : NumberInt(3), 
+    "Quantity" : NumberInt(0), 
+    "SLB" : NumberInt(10), 
+    "LX" : NumberInt(885), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "1"
+}
+{ 
+    "_id" : ObjectId("5af7e93da8cc4309f0b30469"), 
+    "ProName" : "Fujifilm XF 50mm f/2 R WR", 
+    "TinyDes" : "Bảo hành 24 tháng chính hãng", 
+    "FullDes" : "<p>- Loại ống k&iacute;nh: Ống k&iacute;nh prime<br />- Cảm biến tương th&iacute;ch: APS-C<br />- Ti&ecirc;u cự: 50mm (tương đương 76mm tr&ecirc;n cảm biến full-frame)<br />- Ng&agrave;m: Fujifilm X<br />- Khẩu độ: F2-F16<br />- Khoảng c&aacute;ch lấy n&eacute;t tối thiểu: 0.39m<br />- Độ ph&oacute;ng đại tối đa 0.15X<br />- Lấy n&eacute;t tự động: C&oacute; - Motor lấy n&eacute;t bước<br />- Trọng lượng: 200gr<br />- Đường k&iacute;nh filter: 46mm<br />- Chống được nước nhẹ, bụi bẩn v&agrave; hoạt động được -10&deg;C.</p>", 
+    "Price" : NumberInt(9990000), 
+    "CatID" : NumberInt(6), 
+    "IDNSX" : NumberInt(2), 
+    "Quantity" : NumberInt(8), 
+    "SLB" : NumberInt(23), 
+    "LX" : NumberInt(813), 
+    "XX" : "Nhật Bản", 
+    "SLAnh" : "1"
+}

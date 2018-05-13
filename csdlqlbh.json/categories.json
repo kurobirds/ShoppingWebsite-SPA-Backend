@@ -1,0 +1,24 @@
+{ 
+    "_id" : ObjectId("5af7e9aea8cc4309f0b30482"), 
+    "CatName" : "Máy ảnh DSLR"
+}
+{ 
+    "_id" : ObjectId("5af7e9afa8cc4309f0b30483"), 
+    "CatName" : "Máy ảnh du lịch"
+}
+{ 
+    "_id" : ObjectId("5af7e9afa8cc4309f0b30484"), 
+    "CatName" : "Máy ảnh Mirrorless"
+}
+{ 
+    "_id" : ObjectId("5af7e9afa8cc4309f0b30485"), 
+    "CatName" : "Camera Action"
+}
+{ 
+    "_id" : ObjectId("5af7e9afa8cc4309f0b30486"), 
+    "CatName" : "Máy quay phim"
+}
+{ 
+    "_id" : ObjectId("5af7e9afa8cc4309f0b30487"), 
+    "CatName" : "Phụ kiện"
+}

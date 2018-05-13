@@ -1,0 +1,45 @@
+{ 
+    "_id" : ObjectId("5af7f321a8cc432afc1c0c96"), 
+    "f_Username" : "sang", 
+    "f_Password" : "202cb962ac59075b964b07152d234b70", 
+    "f_Name" : "Tuấn Sang", 
+    "f_Email" : "tuansang9715@gmail.com", 
+    "f_DOB" : ISODate("1997-11-29T17:00:00.000+0000"), 
+    "f_Permission" : NumberInt(1)
+}
+{ 
+    "_id" : ObjectId("5af7f325a8cc432afc1c0c97"), 
+    "f_Username" : "sangdeptrai", 
+    "f_Password" : "4dd52a3e18a134efc7b9f5bb49b1a2fd", 
+    "f_Name" : "sangdeptrai", 
+    "f_Email" : "tuansang@gmail.com", 
+    "f_DOB" : null, 
+    "f_Permission" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5af7f326a8cc432afc1c0c98"), 
+    "f_Username" : "thanhchodien", 
+    "f_Password" : "caf1a3dfb505ffed0d024130f58c5cfa", 
+    "f_Name" : "Thành Dep Trai", 
+    "f_Email" : "thanhchodien@gmail.com", 
+    "f_DOB" : ISODate("2003-06-10T17:00:00.000+0000"), 
+    "f_Permission" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5af7f326a8cc432afc1c0c99"), 
+    "f_Username" : "boycute", 
+    "f_Password" : "b59c67bf196a4758191e42f76670ceba", 
+    "f_Name" : "boycute", 
+    "f_Email" : "nhokshock@yahoo.com", 
+    "f_DOB" : null, 
+    "f_Permission" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5af7f326a8cc432afc1c0c9a"), 
+    "f_Username" : "sangmini", 
+    "f_Password" : "202cb962ac59075b964b07152d234b70", 
+    "f_Name" : "sangmini", 
+    "f_Email" : "minhsang@ngu.vl", 
+    "f_DOB" : null, 
+    "f_Permission" : NumberInt(0)
+}
