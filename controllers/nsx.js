@@ -4,7 +4,7 @@ exports.create = function(req, res) {
 	console.log(req.body);
 
 	var nsx = new nsx({
-		namensx: req.body.namensx || "null",
+		NameNSX: req.body.NameNSX || "null",
 	});
 
 	nsx.save((err, docs) => {
@@ -54,7 +54,7 @@ exports.update = function(req, res) {
 		.findByIdAndUpdate(
 			req.params.id,
 			{
-				namensx: req.body.namensx || "Null",
+				NameNSX: req.body.NameNSX || "Null",
 			},
 			{ new: true }
 		)

@@ -1,15 +1,17 @@
 var mongoose = require("mongoose");
 
 var schema = mongoose.Schema({
-	proname: String,
-	tinyDes: String,
-	fullDes: String,
+	ProName: String,
+	TinyDes: String,
+	FullDes: String,
 	Prize: Number,
-	catID: Number,
-	idNSX: Number,
+	CatID: Number,
+	IDNSX: Number,
 	Quantity: Number,
-	SLBan: Number,
-	View: Number,
+	SLB: Number,
+	LX: Number,
+	XX: String,
+	SLAnh: String
 });
 
 module.exports = mongoose.model("products", schema, "products");
