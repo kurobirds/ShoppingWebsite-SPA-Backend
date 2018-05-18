@@ -1,3 +1,7 @@
+require("./config/config");
+require("./models");
+console.log(`Environment: ${CONFIG.app}`);
+
 var createError = require("http-errors");
 var express = require("express");
 var path = require("path");
@@ -15,21 +19,6 @@ var indexRouter = require("./routes/index");
 
 var app = express();
 
-// Mongoose
-
-const mongoDB =
-"mongodb://admin:admin@ds117590.mlab.com:17590/shopping-website-spa";
-mongoose.Promise = global.Promise;
-mongoose
-.connect(mongoDB)
-.then(() => {
-	console.log("connection success");
-})
-.catch(error => {
-	console.log("Connect fail: ", error.stack);
-	process.exit(1);
-});
-
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "jade");
@@ -40,19 +29,31 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
-// enable cors
-app.use((req, res, next) => {
-	res.header("Access-Control-Allow-Origin", "*");
-	res.header(
+// CORS
+app.use(function(req, res, next) {
+	// Website you wish to allow to connect
+	res.setHeader("Access-Control-Allow-Origin", "*");
+	// Request methods you wish to allow
+	res.setHeader(
+		"Access-Control-Allow-Methods",
+		"GET, POST, OPTIONS, PUT, PATCH, DELETE"
+	);
+	// Request headers you wish to allow
+	res.setHeader(
 		"Access-Control-Allow-Headers",
-		"Origin, X-Requested-With, Content-Type, Accept"
-		);
-	res.header("Access-Control-Allow-Methods", "*");
-	res.header("Access-Control-Allow-Credentials", "true");
+		"X-Requested-With, content-type, Authorization, Content-Type"
+	);
+	// Set to true if you need the website to include cookies in the requests sent
+	// to the API (e.g. in case you use sessions)
+	res.setHeader("Access-Control-Allow-Credentials", true);
+	// Pass to next layer of middleware
 	next();
 });
 
-app.use("/", indexRouter);
+app.use("/", (req, res) => {
+	res.statusCode = 200;
+	res.send("Server online~~~");
+});
 
 //===========================
 app.use("/api/producers", producers);
