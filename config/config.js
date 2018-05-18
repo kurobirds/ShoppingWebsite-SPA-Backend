@@ -12,5 +12,5 @@ CONFIG.db_name = process.env.DB_NAME || "name";
 CONFIG.db_user = process.env.DB_USER || "root";
 CONFIG.db_password = process.env.DB_PASSWORD || "";
 
-CONFIG.jwt_encryption = process.env.JWT_ENCRYPTION || "jwt_please_change";
+CONFIG.jwt_encryption = process.env.JWT_ENCRYPTION || "akinoSecret";
 CONFIG.jwt_expiration = process.env.JWT_EXPIRATION || "10000";

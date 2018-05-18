@@ -1,6 +1,8 @@
 var mongoose = require("mongoose");
+const bcrypt = require("bcrypt");
+const bcrypt_p = require("bcrypt-promise");
 
-var schema = mongoose.Schema({
+var UserSchema = mongoose.Schema({
 	f_Username: String,
 	f_Password: String,
 	f_Name: String,
@@ -9,4 +11,4 @@ var schema = mongoose.Schema({
 	f_Permission: Number,
 });
 
-module.exports = mongoose.model("users", schema, "users");
+module.exports = mongoose.model("users", UserSchema);
