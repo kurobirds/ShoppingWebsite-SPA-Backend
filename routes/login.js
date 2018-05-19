@@ -1,36 +1,44 @@
-var express = require("express");
-var router = express.Router();
-var jwt = require("jsonwebtoken");
-var passport = require("passport");
-var passportJWT = require("passport-jwt");
+const express = require("express");
+const router = express.Router();
+const jwt = require("jsonwebtoken");
+const passport = require("passport");
+const passportJWT = require("passport-jwt");
 
-var ExtractJwt = passportJWT.ExtractJwt;
-var JwtStrategy = passportJWT.Strategy;
+const ExtractJwt = passportJWT.ExtractJwt;
+const JwtStrategy = passportJWT.Strategy;
 
-var jwtOptions = {};
+let jwtOptions = {};
 jwtOptions.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken();
 jwtOptions.secretOrKey = CONFIG.jwt_encryption;
 
-var userModel = require("../models/users");
+const userModel = require("../models/users");
 
 router.post("/", async function(req, res) {
+	let username, password;
+	console.log(req.body)
 	if (req.body.username && req.body.password) {
-		var username = req.body.username;
-		var password = req.body.password;
+		username = req.body.username;
+		password = req.body.password;
+	}
+	else {
+
+		res.status(400).json({message: 'bad request'})
+		return;
 	}
 
-	let [err, user] = await to(userModel.findOne({ f_Username: username }));
+
+	let [err, user] = await to(userModel.findOne({ username: username }));
 
 	if (!user) {
 		res.status(401).json({ message: "no such user found" });
 	}
 
-	if (user.f_Password === password) {
-		var payload = {
-			username: user.f_Username,
-			permission: user.f_Permission,
+	if (user.password ===  password) {
+		let payload = {
+			username: user.username,
+			permission: user.permission,
 		};
-		var token = jwt.sign(payload, jwtOptions.secretOrKey);
+		let token = jwt.sign(payload, jwtOptions.secretOrKey);
 		res.json({ message: "ok", token: token });
 	} else {
 		res.status(401).json({ message: "passwords did not match" });

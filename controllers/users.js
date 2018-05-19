@@ -2,12 +2,12 @@ var userModel = require("../models/users");
 
 exports.create = function(req, res) {
 	var user = new userModel({
-		f_Username: req.body.f_Username || "null",
-		f_Password: req.body.f_Password || "null",
-		f_Name: req.body.f_Name || "null",
-		f_Email: req.body.f_Email || "null",
-		f_DOB: req.body.f_DOB || "01/01/1900",
-		f_Permission: req.body.f_Permission || -1,
+		username: req.body.username || "null",
+		password: req.body.password || "null",
+		name: req.body.name || "null",
+		email: req.body.email || "null",
+		DOB: req.body.DOB || "01/01/1900",
+		permission: req.body.permission || -1,
 	});
 
 	user.save((err, docs) => {
@@ -33,79 +33,79 @@ exports.findAll = function(req, res) {
 
 exports.findOne = function(req, res) {
 	userModel
-		.findById(req.params.id)
-		.then(doc => {
-			if (!doc) {
-				return res.status(404).send({
-					message: `Not found with id ${req.params.id}`,
-				});
-			}
+	.findById(req.params.id)
+	.then(doc => {
+		if (!doc) {
+			return res.status(404).send({
+				message: `Not found with id ${req.params.id}`,
+			});
+		}
 
-			res.send(doc);
-		})
-		.catch(err => {
-			if (err.kind === "ObjectId") {
-				return res.status(404).send({
-					message: `Not found with id ${req.params.id}`,
-				});
-			}
-			return res.status(500).send({ message: "Error when finding!" });
-		});
+		res.send(doc);
+	})
+	.catch(err => {
+		if (err.kind === "ObjectId") {
+			return res.status(404).send({
+				message: `Not found with id ${req.params.id}`,
+			});
+		}
+		return res.status(500).send({ message: "Error when finding!" });
+	});
 };
 
 exports.update = function(req, res) {
 	userModel
-		.findByIdAndUpdate(
-			req.params.id,
-			{
-				f_Username: req.body.f_Username || "null",
-				f_Password: req.body.f_Password || "null",
-				f_Name: req.body.f_Name || "null",
-				f_Email: req.body.f_Email || "null",
-				f_DOB: req.body.f_DOB || "01/01/1900",
-				f_Permission: req.body.f_Permission || -1,
-			},
-			{ new: true }
+	.findByIdAndUpdate(
+		req.params.id,
+		{
+			username: req.body.username || "null",
+			password: req.body.password || "null",
+			name: req.body.name || "null",
+			email: req.body.email || "null",
+			DOB: req.body.DOB || "01/01/1900",
+			permission: req.body.permission || -1,
+		},
+		{ new: true }
 		)
-		.then(doc => {
-			if (!doc) {
-				return res.status(404).send({
-					message: `Not found with id ${req.params.id}`,
-				});
-			}
-			res.send(doc);
-		})
-		.catch(err => {
-			if (err.kind === "ObjectId") {
-				return res.status(404).send({
-					message: `Not found with id ${req.params.id}`,
-				});
-			}
-			return res.status(500).send({
-				message: "Error when finding!",
+	.then(doc => {
+		if (!doc) {
+			return res.status(404).send({
+				message: `Not found with id ${req.params.id}`,
 			});
+		}
+		res.send(doc);
+	})
+	.catch(err => {
+		if (err.kind === "ObjectId") {
+			return res.status(404).send({
+				message: `Not found with id ${req.params.id}`,
+			});
+		}
+		return res.status(500).send({
+			message: "Error when finding!",
 		});
+	});
 };
 
 exports.delete = function(req, res) {
 	userModel
-		.findByIdAndRemove(req.params.id)
-		.then(doc => {
-			if (!doc) {
-				return res.status(404).send({
-					message: `Not found with id ${req.params.id}`,
-				});
-			}
-			res.send({ message: "Deleted successfully!" });
-		})
-		.catch(err => {
-			if (err.kind === "ObjectId") {
-				return res.status(404).send({
-					message: `Not found with id ${req.params.id}`,
-				});
-			}
-			return res.status(500).send({
-				message: `Error when delete with id ${req.params.id}`,
+	.findByIdAndRemove(req.params.id)
+	.then(doc => {
+		if (!doc) {
+			return res.status(404).send({
+				message: `Not found with id ${req.params.id}`,
 			});
+		}
+		res.send({ message: "Deleted successfully!" });
+	})
+	.catch(err => {
+		if (err.kind === "ObjectId") {
+			return res.status(404).send({
+				message: `Not found with id ${req.params.id}`,
+			});
+		}
+		return res.status(500).send({
+			message: `Error when delete with id ${req.params.id}`,
 		});
+	});
 };
