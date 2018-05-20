@@ -1,4 +1,12 @@
 { 
+    "_id" : ObjectId("5af7e987a8cc4309f0b30477"), 
+    "NameNSX" : "DJI"
+}
+{ 
+    "_id" : ObjectId("5af7e987a8cc4309f0b30478"), 
+    "NameNSX" : "Khác"
+}
+{ 
     "_id" : ObjectId("5af7e986a8cc4309f0b30473"), 
     "NameNSX" : "Canon"
 }
@@ -13,12 +21,4 @@
 { 
     "_id" : ObjectId("5af7e987a8cc4309f0b30476"), 
     "NameNSX" : "Sony"
-}
-{ 
-    "_id" : ObjectId("5af7e987a8cc4309f0b30477"), 
-    "NameNSX" : "DJI"
-}
-{ 
-    "_id" : ObjectId("5af7e987a8cc4309f0b30478"), 
-    "NameNSX" : "Khác"
 }
