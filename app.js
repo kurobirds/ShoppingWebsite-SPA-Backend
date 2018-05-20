@@ -73,6 +73,15 @@ app.use(function(req, res, next) {
 	next();
 });
 
+app.use("*", (req, res, next) => {
+	if (req.method == "OPTIONS") {
+		res.status(200);
+		res.send();
+	} else {
+		next();
+	}
+});
+
 app.get("/", (req, res) => {
 	res.statusCode = 200;
 	res.send("Server online~~~");
@@ -95,7 +104,7 @@ app.use(
 	products
 );
 app.use("/api/users", passport.authenticate("jwt", { session: false }), users);
-app.use("/login", login);
+app.use("/api/login", login);
 //===========================
 
 // catch 404 and forward to error handler
