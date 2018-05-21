@@ -3,6 +3,7 @@ const router = express.Router();
 const jwt = require("jsonwebtoken");
 const passport = require("passport");
 const passportJWT = require("passport-jwt");
+const bcrypt = require("bcrypt");
 
 const ExtractJwt = passportJWT.ExtractJwt;
 const JwtStrategy = passportJWT.Strategy;
@@ -13,9 +14,9 @@ jwtOptions.secretOrKey = CONFIG.jwt_encryption;
 
 const userModel = require("../models/users");
 
-router.get('', (req, res) => {
-	res.send('You has no permission for this site')
-})
+router.get("/", (req, res) => {
+	res.status(405).json({ message: "Method not allowed" });
+});
 
 router.post("/", async function(req, res) {
 	let username, password;
@@ -27,20 +28,26 @@ router.post("/", async function(req, res) {
 	let [err, user] = await to(userModel.findOne({ username: username }));
 
 	if (!user) {
-		res.status(401).json({ message: "No such user found" });
+		res.status(400).json({ message: "Username not Found" });
 		return;
 	}
 
-	if (user.password === password) {
-		let payload = {
-			username: user.username,
-			permission: user.permission,
-		};
-		let token = jwt.sign(payload, jwtOptions.secretOrKey);
-		res.json({ message: "ok", token: token });
-	} else {
-		res.status(401).json({ message: "Passwords did not match" });
-	}
+	bcrypt.compare(password, user.password, (err, valid) => {
+		if (!valid) {
+			return res.status(400).json({
+				message: "Password is Wrong"
+			});
+		}
+
+		let token = generateToken(user);
+
+		user = getCleanUser(user);
+
+		res.json({
+			user: user,
+			token: token
+		});
+	});
 });
 
 module.exports = router;

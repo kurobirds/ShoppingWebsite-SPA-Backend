@@ -57,6 +57,10 @@ typings/
 # dotenv environment variables file
 .env
 
+# IDE
+.idea
+.vs
+
 # lock file
 package-lock.json
 yarn.lock
