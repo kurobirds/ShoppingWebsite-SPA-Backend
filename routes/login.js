@@ -1,16 +1,8 @@
 const express = require("express");
 const router = express.Router();
+const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const passport = require("passport");
-const passportJWT = require("passport-jwt");
-const bcrypt = require("bcrypt");
-
-const ExtractJwt = passportJWT.ExtractJwt;
-const JwtStrategy = passportJWT.Strategy;
-
-let jwtOptions = {};
-jwtOptions.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken();
-jwtOptions.secretOrKey = CONFIG.jwt_encryption;
 
 const userModel = require("../models/users");
 
@@ -40,8 +32,6 @@ router.post("/", async function(req, res) {
 		}
 
 		let token = generateToken(user);
-
-		user = getCleanUser(user);
 
 		res.json({
 			user: user,

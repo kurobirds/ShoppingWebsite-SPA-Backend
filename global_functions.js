@@ -19,6 +19,7 @@ TE = function(err_message, log) {
 };
 
 const jwt = require("jsonwebtoken");
+
 generateToken = function(user) {
 	let payload = {
 		username: user.username,

@@ -1,6 +1,7 @@
 require("./config/config");
 require("./global_functions");
 require("./models");
+require("./middleware/passport");
 console.log(`Environment: ${CONFIG.app}`);
 
 // Default package
@@ -14,22 +15,6 @@ const _ = require("lodash");
 const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const passport = require("passport");
-const passportJWT = require("passport-jwt");
-
-// Passport
-const ExtractJwt = passportJWT.ExtractJwt;
-const JwtStrategy = passportJWT.Strategy;
-
-var jwtOptions = {};
-jwtOptions.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken();
-jwtOptions.secretOrKey = CONFIG.jwt_encryption;
-
-passport.use(
-	new JwtStrategy(jwtOptions, function(jwt_payload, next) {
-		console.log("payload received", jwt_payload);
-		next(null, jwt_payload);
-	})
-);
 
 //=================================
 var producers = require("./routes/nsx");
@@ -43,10 +28,9 @@ var indexRouter = require("./routes/index");
 
 var app = express();
 
-
 // view engine setup
-app.use(express.static('public'));
-app.use(express.static('views'));
+app.use(express.static("public"));
+app.use(express.static("views"));
 app.set("views", path.join(__dirname, "views"));
 
 app.use(logger("dev"));
@@ -108,12 +92,12 @@ app.use(
 );
 app.use("/api/users", passport.authenticate("jwt", { session: false }), users);
 app.use("/api/sign-in", login);
-app.use("/api/sign-up", register)
+app.use("/api/sign-up", register);
 //===========================
 
 // catch 404 and forward to error handler
-app.use(function(req, res,next) {
-    res.status(404).send('404: File Not Found');
+app.use(function(req, res, next) {
+	res.status(404).send("404: File Not Found");
 });
 
 // error handler
