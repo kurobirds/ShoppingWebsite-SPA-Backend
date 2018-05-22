@@ -1,46 +1,65 @@
 const express = require("express");
 const router = express.Router();
-const jwt = require("jsonwebtoken");
-const passport = require("passport");
-const passportJWT = require("passport-jwt");
-
-const ExtractJwt = passportJWT.ExtractJwt;
-const JwtStrategy = passportJWT.Strategy;
-
-var jwtOptions = {};
-jwtOptions.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken();
-jwtOptions.secretOrKey = CONFIG.jwt_encryption;
 
 var userModel = require("../models/users");
 
-router.post("/", async function(req, res) {
-	if (req.body) {
-		var body = req.body;
-	}
-	var hash = bcrypt.hashSync(body.password.trim(), 10);
-
-	let [err, user] = await to(userModel.findOne({ username: body.username }));
-
+router.get("/:username", async (req, res) => {
+	let [err, user] = await to(
+		userModel.findOne({ username: req.params.username })
+	);
 	if (user) {
-		res.status(401).json({ message: "Account already exists" });
+		return res
+			.status(400)
+			.json({ message: "Account already exists", ok: false });
+	} else {
+		return res
+			.status(200)
+			.json({ message: "You can use this username", ok: true });
 	}
+});
 
-	var user = new userModel({
-		username: body.username,
-		password: hash,
-		name: "No-name",
-		email: "No-email",
-		DOB: 0,
-		permission: 0,
-	});
-	user.save((err, docs) => {
-		if (err) {
-			console.log(err);
-			res.status(500).send({ message: "Error when creating!" });
-		} else {
-			res.send(docs);
+router.post("/", async (req, res) => {
+	let username, password, confirm;
+	if (req.body.username && req.body.password && req.body.confirm) {
+		username = req.body.username;
+		password = req.body.password;
+		confirm = req.body.confirm;
+
+		if (confirm !== password) {
+			return res.status(400).json({
+				message: "Password & Confirm Password not math",
+				ok: false
+			});
 		}
-	});
+
+		let [err, user] = await to(userModel.findOne({ username: username }));
+
+		if (user) {
+			return res
+				.status(400)
+				.json({ message: "Account already exists", ok: false });
+		}
+
+		let newUser = new userModel({
+			username,
+			password
+		});
+
+		newUser.save((err, docs) => {
+			if (err) {
+				console.log(err);
+				return res
+					.status(500)
+					.json({ message: "Error when creating!", ok: false });
+			} else {
+				return res
+					.status(201)
+					.json({ message: "Sign up successfully", ok: true });
+			}
+		});
+	} else {
+		return res.status(400).json({ message: "Missing params", ok: false });
+	}
 });
 
 module.exports = router;
