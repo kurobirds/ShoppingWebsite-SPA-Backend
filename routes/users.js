@@ -1,7 +1,7 @@
-var express = require("express");
-var router = express.Router();
+const express = require("express");
+const router = express.Router();
 
-var users = require("../controllers/users");
+const users = require("../controllers/users");
 
 router.post("/", users.create);
 // Retrieve all Note

@@ -1,16 +1,30 @@
-var express = require("express");
-var router = express.Router();
+const express = require("express");
+const router = express.Router();
 
-var categories = require("../controllers/categories");
+const categories = require("../controllers/categories");
 
-router.post("/", categories.create);
+const passport = require("passport");
+
+router.post(
+	"/",
+	passport.authenticate("jwt", { session: false }),
+	categories.create
+);
 // Retrieve all Note
 router.get("/", categories.findAll);
 // Retrieve a single Note with noteId
 router.get("/:id", categories.findOne);
 // Update a Note with Id
-router.put("/:id", categories.update);
+router.put(
+	"/:id",
+	passport.authenticate("jwt", { session: false }),
+	categories.update
+);
 // Delete a Note with Id
-router.delete("/:id", categories.delete);
+router.delete(
+	"/:id",
+	passport.authenticate("jwt", { session: false }),
+	categories.delete
+);
 
 module.exports = router;

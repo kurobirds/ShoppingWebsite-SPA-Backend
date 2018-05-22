@@ -13,7 +13,6 @@ var logger = require("morgan");
 // Addition package
 const _ = require("lodash");
 const mongoose = require("mongoose");
-const jwt = require("jsonwebtoken");
 const passport = require("passport");
 
 //=================================
@@ -24,7 +23,6 @@ var users = require("./routes/users");
 var login = require("./routes/login");
 var register = require("./routes/register");
 //=================================
-var indexRouter = require("./routes/index");
 
 var app = express();
 
@@ -75,21 +73,9 @@ app.get("/", (req, res) => {
 });
 
 //===========================
-app.use(
-	"/api/producers",
-	passport.authenticate("jwt", { session: false }),
-	producers
-);
-app.use(
-	"/api/categories",
-	passport.authenticate("jwt", { session: false }),
-	categories
-);
-app.use(
-	"/api/products",
-	passport.authenticate("jwt", { session: false }),
-	products
-);
+app.use("/api/producers", producers);
+app.use("/api/categories", categories);
+app.use("/api/products", products);
 app.use("/api/users", passport.authenticate("jwt", { session: false }), users);
 app.use("/api/sign-in", login);
 app.use("/api/sign-up", register);
