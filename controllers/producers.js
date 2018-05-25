@@ -1,13 +1,13 @@
-var nsx = require("../models/nsx");
+const producerModel = require("../models/producers");
 
 exports.create = function(req, res) {
 	console.log(req.body);
 
-	var nsx = new nsx({
-		NameNSX: req.body.NameNSX || "null",
+	var producer = new producerModel({
+		Name: req.body.Name || "null",
 	});
 
-	nsx.save((err, docs) => {
+	producer.save((err, docs) => {
 		if (err) {
 			console.log(err);
 			res.status(500).send({ message: "Error when creating!" });
@@ -18,7 +18,7 @@ exports.create = function(req, res) {
 };
 
 exports.findAll = function(req, res) {
-	nsx.find((err, docs) => {
+	producerModel.find((err, docs) => {
 		if (err) {
 			console.log(err);
 			res.status(500).send({ message: "Error when finding" });
@@ -29,7 +29,7 @@ exports.findAll = function(req, res) {
 };
 
 exports.findOne = function(req, res) {
-	nsx
+	producerModel
 		.findById(req.params.id)
 		.then(doc => {
 			if (!doc) {
@@ -50,11 +50,11 @@ exports.findOne = function(req, res) {
 };
 
 exports.update = function(req, res) {
-	nsx
+	producerModel
 		.findByIdAndUpdate(
 			req.params.id,
 			{
-				NameNSX: req.body.NameNSX || "Null",
+				Name: req.body.Name || "Null",
 			},
 			{ new: true }
 		)
@@ -79,7 +79,7 @@ exports.update = function(req, res) {
 };
 
 exports.delete = function(req, res) {
-	nsx
+	producerModel
 		.findByIdAndRemove(req.params.id)
 		.then(doc => {
 			if (!doc) {

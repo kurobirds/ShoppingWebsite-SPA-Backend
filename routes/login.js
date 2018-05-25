@@ -1,8 +1,5 @@
 const express = require("express");
 const router = express.Router();
-const bcrypt = require("bcrypt");
-const jwt = require("jsonwebtoken");
-const passport = require("passport");
 
 const userModel = require("../models/users");
 
@@ -11,32 +8,32 @@ router.get("/", (req, res) => {
 });
 
 router.post("/", async function(req, res) {
-	let username, password;
-	if (req.body.username && req.body.password) {
-		username = req.body.username;
-		password = req.body.password;
+	let Username, Password;
+	if (req.body.Username && req.body.Password) {
+		Username = req.body.Username;
+		Password = req.body.Password;
 	}
 
-	let [err, user] = await to(userModel.findOne({ username: username }));
+	let [err, user] = await to(userModel.findOne({ Username: Username }));
 
 	if (!user) {
 		res.status(400).json({ message: "Username not Found" });
 		return;
 	}
 
-	bcrypt.compare(password, user.password, (err, valid) => {
-		if (!valid) {
-			return res.status(400).json({
-				message: "Password is Wrong"
-			});
-		}
+	let [, valid] = await to(user.comparePassword(Password));
 
-		let token = generateToken(user);
-
-		res.json({
-			user: user,
-			token: token
+	if (!valid) {
+		return res.status(400).json({
+			message: "Password is Wrong",
 		});
+	}
+
+	let token = generateToken(user);
+
+	res.json({
+		user: user,
+		token: token,
 	});
 });
 

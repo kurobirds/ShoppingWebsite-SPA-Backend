@@ -1,48 +1,27 @@
-var mongoose = require("mongoose");
+const mongoose = require("mongoose");
+const autopopulate = require("mongoose-autopopulate");
 
-var schema = mongoose.Schema({
-	ProName: String,
-	FullDes: String,
-	Prize: Number,
-	CatID: Number,
-	IDProducer: Number,
+const Schema = mongoose.Schema;
+
+const productSchema = new Schema({
+	Name: String,
+	Description: String,
+	Price: Number,
+	Categories_Detail: {
+		type: Schema.Types.ObjectId,
+		ref: "categories",
+		autopopulate: true,
+	},
+	Producer_Detail: {
+		type: Schema.Types.ObjectId,
+		ref: "producers",
+		autopopulate: true,
+	},
 	Quantity: Number,
-	SellQuantity: Number,
+	Sell_Quantity: Number,
 	View: Number,
 });
 
-dbo
-	.collection("products")
-	.aggregate([
-		{
-			$lookup: {
-				from: "categories",
-				localField: "CatID",
-				foreignField: "CatID",
-				as: "categoriesDetail",
-			},
-		},
-	])
-	.toArray(function(err, res) {
-		if (err) throw err;
-		console.log(JSON.stringify(res));
-	});
+productSchema.plugin(autopopulate);
 
-dbo
-	.collection("products")
-	.aggregate([
-		{
-			$lookup: {
-				from: "nsx",
-				localField: "IDProducer",
-				foreignField: "IDProducer",
-				as: "producerDetail",
-			},
-		},
-	])
-	.toArray(function(err, res) {
-		if (err) throw err;
-		console.log(JSON.stringify(res));
-	});
-
-module.exports = mongoose.model("products", schema, "products");
+module.exports = mongoose.model("products", productSchema, "products");

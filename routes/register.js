@@ -5,7 +5,7 @@ var userModel = require("../models/users");
 
 router.get("/:username", async (req, res) => {
 	let [err, user] = await to(
-		userModel.findOne({ username: req.params.username })
+		userModel.findOne({ Username: req.params.Username })
 	);
 	if (user) {
 		return res
@@ -14,25 +14,25 @@ router.get("/:username", async (req, res) => {
 	} else {
 		return res
 			.status(200)
-			.json({ message: "You can use this username", ok: true });
+			.json({ message: "You can use this Username", ok: true });
 	}
 });
 
 router.post("/", async (req, res) => {
-	let username, password, confirm;
-	if (req.body.username && req.body.password && req.body.confirm) {
-		username = req.body.username;
-		password = req.body.password;
+	let Username, Password, confirm;
+	if (req.body.Username && req.body.Password && req.body.confirm) {
+		Username = req.body.Username;
+		Password = req.body.Password;
 		confirm = req.body.confirm;
 
-		if (confirm !== password) {
+		if (confirm !== Password) {
 			return res.status(400).json({
 				message: "Password & Confirm Password not math",
-				ok: false
+				ok: false,
 			});
 		}
 
-		let [err, user] = await to(userModel.findOne({ username: username }));
+		let [err, user] = await to(userModel.findOne({ Username: Username }));
 
 		if (user) {
 			return res
@@ -41,8 +41,8 @@ router.post("/", async (req, res) => {
 		}
 
 		let newUser = new userModel({
-			username,
-			password
+			Username,
+			Password,
 		});
 
 		newUser.save((err, docs) => {

@@ -16,7 +16,7 @@ const mongoose = require("mongoose");
 const passport = require("passport");
 
 //=================================
-var producers = require("./routes/nsx");
+var producers = require("./routes/producers");
 var categories = require("./routes/categories");
 var products = require("./routes/products");
 var users = require("./routes/users");

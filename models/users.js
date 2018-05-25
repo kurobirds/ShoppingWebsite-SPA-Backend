@@ -1,50 +1,50 @@
 var mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
-const bcrypt_p = require("bcrypt-promise");
 
 var UserSchema = mongoose.Schema({
 	username: String,
-	password: String,
-	name: String,
-	email: String,
+	Password: String,
+	Name: String,
+	Email: String,
 	DOB: Number,
-	permission: Number
+	Permission: Number,
 });
 
 UserSchema.pre("save", async function(next) {
-	if (this.isModified("password") || this.isNew) {
+	if (this.isModified("Password") || this.isNew) {
 		let err, salt, hash;
 		[err, salt] = await to(bcrypt.genSalt(10));
 		if (err) TE(err.message, true);
 
-		[err, hash] = await to(bcrypt.hash(this.password, salt));
+		[err, hash] = await to(bcrypt.hash(this.Password, salt));
 		if (err) TE(err.message, true);
 
-		this.password = hash;
+		this.Password = hash;
 	} else {
 		return next();
 	}
 });
 
-UserSchema.pre("findOneAndUpdate", async function(next) {
+UserSchema.methods.hashPassword = async function(pw) {
 	let err, salt, hash;
 	[err, salt] = await to(bcrypt.genSalt(10));
 	if (err) TE(err.message, true);
 
-	[err, hash] = await to(bcrypt.hash(this._update.password, salt));
+	[err, hash] = await to(bcrypt.hash(pw, salt));
 	if (err) TE(err.message, true);
 
-	this._update.password = hash;
-});
+	return hash;
+};
 
 UserSchema.methods.comparePassword = async function(pw) {
 	let err, pass;
-	if (!this.password) TE("password not set");
+	if (!this.Password) TE("password not set");
 
-	[err, pass] = await to(bcrypt_p.compare(pw, this.password));
+	[err, pass] = await to(bcrypt.compare(pw, this.Password));
+
 	if (err) TE(err);
 
-	if (!pass) TE("invalid password");
+	if (!pass) TE("invalid Password");
 
 	return this;
 };

@@ -1,19 +1,19 @@
 var userModel = require("../models/users");
 
 exports.create = async (req, res) => {
-	let [err, user] = await to(userModel.findOne({ username: username }));
+	let [err, user] = await to(userModel.findOne({ Username: Username }));
 
 	if (user) {
 		return res.status(400).json({ message: "Account already exists" });
 	}
 
 	var newUser = new userModel({
-		username: req.body.username || "null",
-		password: req.body.password || "null",
-		name: req.body.name || "null",
-		email: req.body.email || "null",
-		DOB: req.body.DOB || "0",
-		permission: req.body.permission || -1
+		Username: req.body.Username || null,
+		Password: req.body.Password || null,
+		Name: req.body.Name || null,
+		Email: req.body.Email || null,
+		DOB: req.body.DOB || 0,
+		Permission: req.body.Permission || -1,
 	});
 
 	newUser
@@ -45,7 +45,7 @@ exports.findOne = function(req, res) {
 		.then(user => {
 			if (!user) {
 				return res.status(404).send({
-					message: `Not found with id ${req.params.id}`
+					message: `Not found with id ${req.params.id}`,
 				});
 			}
 			return res.send(user);
@@ -53,7 +53,7 @@ exports.findOne = function(req, res) {
 		.catch(err => {
 			if (err.kind === "ObjectId") {
 				return res.status(404).send({
-					message: `Not found with id ${req.params.id}`
+					message: `Not found with id ${req.params.id}`,
 				});
 			}
 			return res.status(500).send({ message: "Error when finding!" });
@@ -61,23 +61,29 @@ exports.findOne = function(req, res) {
 };
 
 exports.update = async (req, res) => {
+	let [err, user] = await to(userModel.findById(req.params.id));
+
+	if (req.body.Password !== user.Password) {
+		[, user.Password] = await to(user.hashPassword(req.body.Password));
+	}
+
 	userModel
 		.findByIdAndUpdate(
 			req.params.id,
 			{
-				username: req.body.username || "null",
-				password: req.body.password || "null",
-				name: req.body.name || "null",
-				email: req.body.email || "null",
-				DOB: req.body.DOB || "0",
-				permission: req.body.permission || -1
+				Username: req.body.Username,
+				Password: user.Password,
+				Name: req.body.Name,
+				Email: req.body.Email,
+				DOB: req.body.DOB,
+				Permission: req.body.Permission || -1,
 			},
 			{ new: true }
 		)
 		.then(doc => {
 			if (!doc) {
 				return res.status(404).send({
-					message: `Not found with id ${req.params.id}`
+					message: `Not found with id ${req.params.id}`,
 				});
 			}
 			return res.send(doc);
@@ -85,11 +91,11 @@ exports.update = async (req, res) => {
 		.catch(err => {
 			if (err.kind === "ObjectId") {
 				return res.status(404).send({
-					message: `Not found with id ${req.params.id}`
+					message: `Not found with id ${req.params.id}`,
 				});
 			}
 			return res.status(500).send({
-				message: "Error when finding!"
+				message: "Error when finding!",
 			});
 		});
 };
@@ -100,7 +106,7 @@ exports.delete = function(req, res) {
 		.then(doc => {
 			if (!doc) {
 				return res.status(404).send({
-					message: `Not found with id ${req.params.id}`
+					message: `Not found with id ${req.params.id}`,
 				});
 			}
 			return res.send({ message: "Deleted successfully!" });
@@ -108,11 +114,11 @@ exports.delete = function(req, res) {
 		.catch(err => {
 			if (err.kind === "ObjectId") {
 				return res.status(404).send({
-					message: `Not found with id ${req.params.id}`
+					message: `Not found with id ${req.params.id}`,
 				});
 			}
 			return res.status(500).send({
-				message: `Error when delete with id ${req.params.id}`
+				message: `Error when delete with id ${req.params.id}`,
 			});
 		});
 };
