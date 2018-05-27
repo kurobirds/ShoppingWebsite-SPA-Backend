@@ -2,12 +2,12 @@ var mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 
 var UserSchema = mongoose.Schema({
-	username: String,
+	Username: String,
 	Password: String,
 	Name: String,
 	Email: String,
 	DOB: Number,
-	Permission: Number,
+	Permission: Number
 });
 
 UserSchema.pre("save", async function(next) {
