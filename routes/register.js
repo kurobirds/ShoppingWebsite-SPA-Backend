@@ -3,9 +3,9 @@ const router = express.Router();
 
 var userModel = require("../models/users");
 
-router.get("/:username", async (req, res) => {
+router.get("/:Username", async (req, res) => {
 	let [err, user] = await to(
-		userModel.findOne({ Username: req.params.Username })
+		userModel.findOne({ Username: req.params.Username }, "Username")
 	);
 	if (user) {
 		return res
@@ -28,7 +28,7 @@ router.post("/", async (req, res) => {
 		if (confirm !== Password) {
 			return res.status(400).json({
 				message: "Password & Confirm Password not math",
-				ok: false,
+				ok: false
 			});
 		}
 
@@ -42,7 +42,7 @@ router.post("/", async (req, res) => {
 
 		let newUser = new userModel({
 			Username,
-			Password,
+			Password
 		});
 
 		newUser.save((err, docs) => {

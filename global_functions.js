@@ -22,14 +22,15 @@ const jwt = require("jsonwebtoken");
 
 generateToken = function(user) {
 	let payload = {
-		username: user.username,
-		email: user.email,
-		name: user.name,
-		permission: user.permission,
+		Username: user.Username,
+		Email: user.Email,
+		Name: user.Name,
+		Permission: user.Permission,
 		_id: user._id.toString()
 	};
 
 	let expiration_time = parseInt(CONFIG.jwt_expiration);
+	console.log(expiration_time);
 	return (token = jwt.sign(payload, CONFIG.jwt_encryption, {
 		expiresIn: expiration_time
 	}));
