@@ -12,14 +12,18 @@ router.post(
 );
 // Retrieve all Note
 router.get("/", categories.findAll);
+
 // Retrieve a single Note with noteId
 router.get("/:id", categories.findOne);
+router.get("/:id/products", categories.findProducts);
+
 // Update a Note with Id
 router.put(
 	"/:id",
 	passport.authenticate("jwt", { session: false }),
 	categories.update
 );
+
 // Delete a Note with Id
 router.delete(
 	"/:id",

@@ -18,6 +18,8 @@ TE = function(err_message, log) {
 	throw new Error(err_message);
 };
 
+// JWT
+
 const jwt = require("jsonwebtoken");
 
 generateToken = function(user) {
@@ -30,7 +32,7 @@ generateToken = function(user) {
 	};
 
 	let expiration_time = parseInt(CONFIG.jwt_expiration);
-	console.log(expiration_time);
+
 	return (token = jwt.sign(payload, CONFIG.jwt_encryption, {
 		expiresIn: expiration_time
 	}));

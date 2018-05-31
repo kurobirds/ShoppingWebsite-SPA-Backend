@@ -1,10 +1,11 @@
-var categories = require("../models/categories");
+const categories = require("../models/categories");
+const productModel = require("../models/products");
 
 exports.create = function(req, res) {
 	console.log(req.body);
 
-	var celebrities = new categories({
-		Name: req.body.Name || "null",
+	const celebrities = new categories({
+		Name: req.body.Name || "null"
 	});
 
 	celebrities.save((err, docs) => {
@@ -34,7 +35,7 @@ exports.findOne = function(req, res) {
 		.then(doc => {
 			if (!doc) {
 				return res.status(404).send({
-					message: `Not found with id ${req.params.id}`,
+					message: `Not found with id ${req.params.id}`
 				});
 			}
 			res.send(doc);
@@ -42,7 +43,7 @@ exports.findOne = function(req, res) {
 		.catch(err => {
 			if (err.kind === "ObjectId") {
 				return res.status(404).send({
-					message: `Not found with id ${req.params.id}`,
+					message: `Not found with id ${req.params.id}`
 				});
 			}
 			return res.status(500).send({ message: "Error when finding!" });
@@ -54,14 +55,14 @@ exports.update = function(req, res) {
 		.findByIdAndUpdate(
 			req.params.id,
 			{
-				Name: req.body.Name || "Null",
+				Name: req.body.Name || "Null"
 			},
 			{ new: true }
 		)
 		.then(doc => {
 			if (!doc) {
 				return res.status(404).send({
-					message: `Not found with id ${req.params.id}`,
+					message: `Not found with id ${req.params.id}`
 				});
 			}
 			res.send(doc);
@@ -69,11 +70,11 @@ exports.update = function(req, res) {
 		.catch(err => {
 			if (err.kind === "ObjectId") {
 				return res.status(404).send({
-					message: `Not found with id ${req.params.id}`,
+					message: `Not found with id ${req.params.id}`
 				});
 			}
 			return res.status(500).send({
-				message: "Error when finding!",
+				message: "Error when finding!"
 			});
 		});
 };
@@ -84,7 +85,7 @@ exports.delete = function(req, res) {
 		.then(doc => {
 			if (!doc) {
 				return res.status(404).send({
-					message: `Not found with id ${req.params.id}`,
+					message: `Not found with id ${req.params.id}`
 				});
 			}
 			res.send({ message: "Deleted successfully!" });
@@ -92,11 +93,23 @@ exports.delete = function(req, res) {
 		.catch(err => {
 			if (err.kind === "ObjectId") {
 				return res.status(404).send({
-					message: `Not found with id ${req.params.id}`,
+					message: `Not found with id ${req.params.id}`
 				});
 			}
 			return res.status(500).send({
-				message: `Error when delete with id ${req.params.id}`,
+				message: `Error when delete with id ${req.params.id}`
 			});
+		});
+};
+
+exports.findProducts = (req, res) => {
+	productModel
+		.find({ Categories_Detail: req.params.id })
+		.then(docs => {
+			res.status(200).send(docs);
+		})
+		.catch(err => {
+			console.log(err);
+			res.status(500).send({ message: "Error when finding" });
 		});
 };
