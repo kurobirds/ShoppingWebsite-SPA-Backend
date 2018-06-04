@@ -76,7 +76,7 @@ exports.update = async (req, res) => {
 				Name: req.body.Name,
 				Email: req.body.Email,
 				DOB: req.body.DOB,
-				Permission: req.body.Permission || -1,
+				Permission: req.body.Permission,
 			},
 			{ new: true }
 		)
