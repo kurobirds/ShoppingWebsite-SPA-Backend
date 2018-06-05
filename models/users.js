@@ -7,7 +7,7 @@ var UserSchema = mongoose.Schema({
 	Name: String,
 	Email: String,
 	DOB: Number,
-	Permission: Number
+	Permission: Number,
 });
 
 UserSchema.pre("save", async function(next) {
@@ -49,4 +49,4 @@ UserSchema.methods.comparePassword = async function(pw) {
 	return this;
 };
 
-module.exports = mongoose.model("user", UserSchema);
+module.exports = mongoose.model("users", UserSchema, "users");

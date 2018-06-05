@@ -22,6 +22,7 @@ var products = require("./routes/products");
 var users = require("./routes/users");
 var login = require("./routes/login");
 var register = require("./routes/register");
+var orders = require("./routes/orders");
 //=================================
 
 var app = express();
@@ -79,6 +80,7 @@ app.use("/api/products", products);
 app.use("/api/users", passport.authenticate("jwt", { session: false }), users);
 app.use("/api/sign-in", login);
 app.use("/api/sign-up", register);
+app.use("/api/orders", orders);
 //===========================
 
 // catch 404 and forward to error handler
