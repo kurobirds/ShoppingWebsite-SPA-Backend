@@ -1,10 +1,31 @@
 const orderModel = require("../models/orders");
+const productModel = require("../models/products");
 
-exports.create = function(req, res) {
+exports.create = async function(req, res) {
+	updateProductQuantity = async orderProduct => {
+			.findById(orderProduct.Product_Info)
+			.exec()
+			.then(product => {
+				return product;
+			});
+		await productModel.findByIdAndUpdate(orderProduct.Product_Info, {
+			Stock_Quantity:
+				plainProduct.Stock_Quantity - orderProduct.Select_Quantity,
+			Sold_Quantity:
+				plainProduct.Sold_Quantity + orderProduct.Select_Quantity,
+		});
+	};
+
+	const List_Product = req.body.List_Product;
+
+	for (let index in List_Product) {
+		updateProductQuantity(List_Product[index]);
+	}
+
 	const order = new orderModel({
 		Order_Date: req.body.Order_Date,
 		User_Detail: req.body.User_Detail,
-		List_Product: req.body.List_Product,
+		List_Product,
 		Price: req.body.Price,
 		Status: req.body.Status,
 	});
