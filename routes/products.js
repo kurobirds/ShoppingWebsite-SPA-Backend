@@ -8,23 +8,24 @@ const passport = require("passport");
 router.post(
 	"/",
 	passport.authenticate("jwt", { session: false }),
-	products.create
+	products.create,
 );
 // Retrieve all Note
 router.get("/", products.findAll);
 // Retrieve a single Note with noteId
 router.get("/:id", products.findOne);
+router.get("/:id/admin", products.findOneAdminPermission);
 // Update a Note with Id
 router.put(
 	"/:id",
 	passport.authenticate("jwt", { session: false }),
-	products.update
+	products.update,
 );
 // Delete a Note with Id
 router.delete(
 	"/:id",
 	passport.authenticate("jwt", { session: false }),
-	products.delete
+	products.delete,
 );
 
 module.exports = router;

@@ -10,17 +10,17 @@ const productSchema = new Schema({
 	Categories_Detail: {
 		type: Schema.Types.ObjectId,
 		ref: "categories",
-		autopopulate: true
+		autopopulate: true,
 	},
 	Producer_Detail: {
 		type: Schema.Types.ObjectId,
 		ref: "producers",
-		autopopulate: true
+		autopopulate: true,
 	},
-	Quantity: Number,
-	Sell_Quantity: Number,
+	Stock_Quantity: Number,
+	Sold_Quantity: Number,
 	View: Number,
-	Images: Array
+	Images: Array,
 });
 
 productSchema.plugin(autopopulate);

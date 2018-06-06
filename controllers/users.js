@@ -1,7 +1,9 @@
 var userModel = require("../models/users");
 
 exports.create = async (req, res) => {
-	let [err, user] = await to(userModel.findOne({ Username: Username }));
+	let [err, user] = await to(
+		userModel.findOne({ Username: req.body.Username }),
+	);
 
 	if (user) {
 		return res.status(400).json({ message: "Account already exists" });
@@ -13,7 +15,7 @@ exports.create = async (req, res) => {
 		Name: req.body.Name || null,
 		Email: req.body.Email || null,
 		DOB: req.body.DOB || 0,
-		Permission: req.body.Permission || -1,
+		Permission: req.body.Permission || 1,
 	});
 
 	newUser
@@ -30,6 +32,7 @@ exports.create = async (req, res) => {
 exports.findAll = function(req, res) {
 	userModel
 		.find()
+		.sort({ _id: 1 })
 		.then(users => {
 			return res.send(users);
 		})
@@ -78,7 +81,7 @@ exports.update = async (req, res) => {
 				DOB: req.body.DOB,
 				Permission: req.body.Permission,
 			},
-			{ new: true }
+			{ new: true },
 		)
 		.then(doc => {
 			if (!doc) {
@@ -86,6 +89,7 @@ exports.update = async (req, res) => {
 					message: `Not found with id ${req.params.id}`,
 				});
 			}
+
 			return res.send(doc);
 		})
 		.catch(err => {

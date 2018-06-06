@@ -1,8 +1,6 @@
 const producerModel = require("../models/producers");
 
 exports.create = function(req, res) {
-	console.log(req.body);
-
 	var producer = new producerModel({
 		Name: req.body.Name || "null",
 	});
@@ -18,14 +16,17 @@ exports.create = function(req, res) {
 };
 
 exports.findAll = function(req, res) {
-	producerModel.find((err, docs) => {
-		if (err) {
+	producerModel
+		.find()
+		.sort({ _id: 1 })
+		.exec()
+		.then(docs => {
+			res.status(200).send(docs);
+		})
+		.catch(err => {
 			console.log(err);
 			res.status(500).send({ message: "Error when finding" });
-		} else {
-			res.send(docs);
-		}
-	});
+		});
 };
 
 exports.findOne = function(req, res) {
@@ -54,9 +55,9 @@ exports.update = function(req, res) {
 		.findByIdAndUpdate(
 			req.params.id,
 			{
-				Name: req.body.Name || "Null",
+				Name: req.body.Name,
 			},
-			{ new: true }
+			{ new: true },
 		)
 		.then(doc => {
 			if (!doc) {

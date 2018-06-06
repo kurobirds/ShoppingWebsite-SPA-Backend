@@ -4,17 +4,23 @@ const autopopulate = require("mongoose-autopopulate");
 const Schema = mongoose.Schema;
 
 const orderSchema = new Schema({
-	OrderDate: Number,
-	UserDetail: {
+	Order_Date: Number,
+	User_Detail: {
 		type: Schema.Types.ObjectId,
 		ref: "users",
 		autopopulate: true,
 	},
-	ListProduct: [
+	List_Product: [
 		{
-			type: Schema.Types.ObjectId,
-			ref: "products",
-			autopopulate: true,
+			Product_Info: {
+				type: Schema.Types.ObjectId,
+				ref: "products",
+				autopopulate: true,
+			},
+
+			Select_Quantity: {
+				type: Schema.Types.Number,
+			},
 		},
 	],
 	Price: Number,

@@ -2,9 +2,9 @@ const orderModel = require("../models/orders");
 
 exports.create = function(req, res) {
 	const order = new orderModel({
-		OrderDate: req.body.OrderDate,
-		UserDetail: req.body.UserDetail,
-		ListProduct: req.body.ListProduct,
+		Order_Date: req.body.Order_Date,
+		User_Detail: req.body.User_Detail,
+		List_Product: req.body.List_Product,
 		Price: req.body.Price,
 		Status: req.body.Status,
 	});
@@ -23,6 +23,7 @@ exports.create = function(req, res) {
 exports.findAll = function(req, res) {
 	orderModel
 		.find()
+		.sort({ _id: 1 })
 		.exec()
 		.then(docs => {
 			res.status(200).send(docs);
@@ -60,13 +61,9 @@ exports.update = function(req, res) {
 		.findByIdAndUpdate(
 			req.params.id,
 			{
-				OrderDate: req.body.OrderDate,
-				UserDetail: req.body.UserDetail,
-				ListProduct: req.body.ListProduct,
-				Price: req.body.Price,
 				Status: req.body.Status,
 			},
-			{ new: true }
+			{ new: true },
 		)
 		.then(doc => {
 			if (!doc) {
