@@ -3,6 +3,7 @@ const productModel = require("../models/products");
 
 exports.create = async function(req, res) {
 	updateProductQuantity = async orderProduct => {
+		const plainProduct = await productModel
 			.findById(orderProduct.Product_Info)
 			.exec()
 			.then(product => {
