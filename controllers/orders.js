@@ -33,8 +33,8 @@ exports.create = async function(req, res) {
 
 	order
 		.save()
-		.then(docs => {
-			res.send(docs);
+		.then(doc => {
+			res.send(doc);
 		})
 		.catch(err => {
 			console.log(err);

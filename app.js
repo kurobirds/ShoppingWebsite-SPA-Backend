@@ -25,6 +25,25 @@ var register = require("./routes/register");
 var orders = require("./routes/orders");
 //=================================
 
+// Bonsai: Elasticsearch
+var client = getElasticInstance();
+
+// Test the connection:
+// Send a HEAD request to "/" and allow
+// up to 30 seconds for it to complete.
+client.ping(
+	{
+		requestTimeout: 30000,
+	},
+	function(error) {
+		if (error) {
+			console.error("elasticsearch cluster is down!");
+		} else {
+			console.log("All is well");
+		}
+	},
+);
+
 var app = express();
 
 // view engine setup
@@ -45,12 +64,12 @@ app.use(function(req, res, next) {
 	// Request methods you wish to allow
 	res.setHeader(
 		"Access-Control-Allow-Methods",
-		"GET, POST, OPTIONS, PUT, PATCH, DELETE"
+		"GET, POST, OPTIONS, PUT, PATCH, DELETE",
 	);
 	// Request headers you wish to allow
 	res.setHeader(
 		"Access-Control-Allow-Headers",
-		"X-Requested-With, content-type, Authorization, Content-Type"
+		"X-Requested-With, content-type, Authorization, Content-Type",
 	);
 	// Set to true if you need the website to include cookies in the requests sent
 	// to the API (e.g. in case you use sessions)

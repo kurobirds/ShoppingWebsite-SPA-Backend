@@ -14,7 +14,7 @@ const orderSchema = new Schema({
 		{
 			Product_Info: {
 				type: Schema.Types.ObjectId,
-				ref: "products",
+				ref: "product",
 				autopopulate: true,
 			},
 

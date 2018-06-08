@@ -1,8 +1,12 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+const mexp = require("mongoose-elasticsearch-xp");
+
 const categorySchema = new Schema({
 	Name: String,
 });
 
-module.exports = mongoose.model("categories", categorySchema, "categories");
+const Category = mongoose.model("categories", categorySchema, "categories");
+
+module.exports = Category;

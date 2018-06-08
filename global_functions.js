@@ -28,13 +28,13 @@ generateToken = function(user) {
 		Email: user.Email,
 		Name: user.Name,
 		Permission: user.Permission,
-		_id: user._id.toString()
+		_id: user._id.toString(),
 	};
 
 	let expiration_time = parseInt(CONFIG.jwt_expiration);
 
 	return (token = jwt.sign(payload, CONFIG.jwt_encryption, {
-		expiresIn: expiration_time
+		expiresIn: expiration_time,
 	}));
 };
 
@@ -48,6 +48,18 @@ getCleanUser = function(user) {
 		username: u.username,
 		email: u.email,
 		permission: u.permission,
-		DOB: u.DOB
+		DOB: u.DOB,
 	};
+};
+
+// Bonsai: Elasticsearch
+const elasticsearch = require("elasticsearch");
+let elasticClient;
+
+getElasticInstance = () => {
+	if (elasticClient) return elasticClient;
+	elasticClient = new elasticsearch.Client({
+		host: process.env.BONSAI_URL2,
+	});
+	return elasticClient;
 };
