@@ -55,11 +55,11 @@ getCleanUser = function(user) {
 // Bonsai: Elasticsearch
 const elasticsearch = require("elasticsearch");
 let elasticClient;
-
+const host = process.env.ELASTIC_URL;
 getElasticInstance = () => {
 	if (elasticClient) return elasticClient;
 	elasticClient = new elasticsearch.Client({
-		host: process.env.BONSAI_URL2,
+		host,
 	});
 	return elasticClient;
 };
