@@ -28,4 +28,6 @@ router.delete(
 	products.delete,
 );
 
+router.put("/:id/comments", products.createComment);
+
 module.exports = router;

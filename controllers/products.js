@@ -174,3 +174,46 @@ exports.delete = function(req, res) {
 			});
 		});
 };
+
+exports.createComment = async (req, res) => {
+	let [err, listComment] = await to(
+		productModel.findById(req.params.id).select("Comments"),
+	);
+
+	newComment = {
+		author: req.body.author,
+		createdAt: req.body.createdAt,
+		comment: req.body.comment,
+	};
+
+	listComment.Comments.push(newComment);
+
+	const newListComment = listComment.Comments;
+
+	productModel
+		.findByIdAndUpdate(
+			req.params.id,
+			{
+				Comments: newListComment,
+			},
+			{ new: true },
+		)
+		.then(doc => {
+			if (!doc) {
+				return res.status(404).send({
+					message: `Not found with id ${req.params.id}`,
+				});
+			}
+			res.send(doc.Comments);
+		})
+		.catch(err => {
+			if (err.kind === "ObjectId") {
+				return res.status(404).send({
+					message: `Not found with id ${req.params.id}`,
+				});
+			}
+			return res.status(500).send({
+				message: "Error when finding!",
+			});
+		});
+};

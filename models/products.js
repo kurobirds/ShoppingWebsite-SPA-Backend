@@ -39,6 +39,13 @@ const productSchema = new Schema({
 	Sold_Quantity: { type: Number, es_type: "long" },
 	View: { type: Number, es_type: "long" },
 	Images: { type: Array, es_type: "text" },
+	Comments: [
+		{
+			author: { type: String, es_type: "keyword" },
+			createdAt: { type: Number, es_type: "long" },
+			comment: String,
+		},
+	],
 });
 
 productSchema.plugin(autopopulate);
