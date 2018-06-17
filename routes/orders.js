@@ -5,16 +5,19 @@ const orders = require("../controllers/orders");
 
 const passport = require("passport");
 
-router.post("/",
+router.post(
+	"/",
 	passport.authenticate("jwt", { session: false }),
-	orders.create
+	orders.create,
 );
 
 // Retrieve all Note
 router.get("/", orders.findAll);
+router.get("/OrderDateFilter/:startDate/:endDate", orders.findOrderDateFilter);
 
 // Retrieve a single Note with noteId
 router.get("/:id", orders.findOne);
+
 // Update a Note with Id
 
 router.put(

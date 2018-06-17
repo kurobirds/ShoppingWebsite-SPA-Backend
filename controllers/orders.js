@@ -106,3 +106,34 @@ exports.update = function(req, res) {
 			});
 		});
 };
+
+exports.findOrderDateFilter = function(req, res) {
+	orderModel
+		.aggregate([
+			{
+				$match: {
+					Order_Date: {
+						$gte: Number(req.params.startDate),
+						$lte: Number(req.params.endDate),
+					},
+				},
+			},
+			{
+				$project: {
+					_id: 0,
+					Price: 1,
+					Order_Date: 1,
+				},
+			},
+
+			{ $sort: { Price: -1 } },
+		])
+		.exec()
+		.then(docs => {
+			res.status(200).send(docs);
+		})
+		.catch(err => {
+			console.log(err);
+			res.status(500).send({ message: "Error when finding" });
+		});
+};

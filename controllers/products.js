@@ -1,3 +1,5 @@
+const mongoose = require("mongoose");
+const ObjectId = mongoose.Types.ObjectId;
 const productModel = require("../models/products");
 
 exports.create = function(req, res) {
@@ -215,5 +217,108 @@ exports.createComment = async (req, res) => {
 			return res.status(500).send({
 				message: "Error when finding!",
 			});
+		});
+};
+
+exports.findCategorySales = function(req, res) {
+	productModel
+		.aggregate([
+			{
+				$group: {
+					_id: "$Categories_Detail",
+					sumQuantity: { $sum: "$Sold_Quantity" },
+				},
+			},
+			{
+				$lookup: {
+					from: "categories",
+					localField: "_id",
+					foreignField: "_id",
+					as: "Categories_Detail",
+				},
+			},
+			{
+				$unwind: "$Categories_Detail",
+			},
+			{
+				$project: {
+					_id: 0,
+					sumQuantity: 1,
+					Name: "$Categories_Detail.Name",
+				},
+			},
+			{ $sort: { sumQuantity: -1 } },
+		])
+		.exec()
+		.then(docs => {
+			res.status(200).send(docs);
+		})
+		.catch(err => {
+			console.log(err);
+			res.status(500).send({ message: "Error when finding" });
+		});
+};
+
+exports.findProducerSales = function(req, res) {
+	productModel
+		.aggregate([
+			{
+				$group: {
+					_id: "$Producer_Detail",
+					sumQuantity: { $sum: "$Sold_Quantity" },
+				},
+			},
+			{
+				$lookup: {
+					from: "producers",
+					localField: "_id",
+					foreignField: "_id",
+					as: "Producer_Detail",
+				},
+			},
+			{
+				$unwind: "$Producer_Detail",
+			},
+			{
+				$project: {
+					_id: 0,
+					sumQuantity: 1,
+					Name: "$Producer_Detail.Name",
+				},
+			},
+			{ $sort: { sumQuantity: -1 } },
+		])
+		.exec()
+		.then(docs => {
+			res.status(200).send(docs);
+		})
+		.catch(err => {
+			console.log(err);
+			res.status(500).send({ message: "Error when finding" });
+		});
+};
+
+exports.findTop10ProductSales = function(req, res) {
+	productModel
+		.aggregate([
+			{
+				$project: {
+					_id: 1,
+					Price: 1,
+					Sold_Quantity: 1,
+					Name: 1,
+					Images: 1,
+				},
+			},
+			{ $sort: { Sold_Quantity: -1 } },
+			{ $limit: 10 },
+		])
+		.exec()
+		.then(docs => {
+			res.status(200).send(docs);
+		})
+		.catch(err => {
+			console.log(err);
+			res.status(500).send({ message: "Error when finding" });
 		});
 };
