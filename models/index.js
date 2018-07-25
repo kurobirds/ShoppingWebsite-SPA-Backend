@@ -8,7 +8,7 @@ if (CONFIG.db_host != "") {
 	}:${CONFIG.db_port}/${CONFIG.db_name}`;
 
 	mongoose
-		.connect(mongo_location)
+		.connect(mongo_location, { useNewUrlParser: true })
 		.then(
 			() => {
 				console.log(
