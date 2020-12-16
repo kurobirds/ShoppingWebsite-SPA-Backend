@@ -11,7 +11,6 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 
 // Addition package
-const _ = require("lodash");
 const mongoose = require("mongoose");
 const passport = require("passport");
 
